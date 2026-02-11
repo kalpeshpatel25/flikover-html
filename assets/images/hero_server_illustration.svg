@@ -1,0 +1,113 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- 
+    Refined Isometric Server Illustration 
+    Matching the style: Red blocks, white dots, magnifying glass
+  -->
+  
+  <defs>
+    <!-- Server Side Gradient (Darker Red) -->
+    <linearGradient id="serverSide" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#b91c1c;stop-opacity:1" /> <!-- Dark Red -->
+      <stop offset="100%" style="stop-color:#d72b1d;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Server Top Gradient (Lighter Red) -->
+    <linearGradient id="serverTop" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff8e8e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff6b6b;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Server Front Gradient (Main Red) -->
+    <linearGradient id="serverFront" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#dd2f10;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff4d2e;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Pattern for dots on side -->
+    <pattern id="dotPattern" x="0" y="0" width="10" height="10" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="white" opacity="0.6"/>
+    </pattern>
+    
+     <filter id="softShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="15" result="blur"/>
+      <feOffset dx="0" dy="10" result="offsetBlur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.3"/>
+      </feComponentTransfer>
+      <feMerge> 
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/> 
+      </feMerge>
+    </filter>
+  </defs>
+
+  <g transform="translate(100, 50)" filter="url(#softShadow)">
+  
+    <!-- Server 1 (Left, Shortest) -->
+    <g transform="translate(0, 80)">
+      <!-- Top -->
+      <path d="M0 0 L35 -20 L70 0 L35 20 Z" fill="url(#serverTop)" stroke="#b91c1c" stroke-width="1"/>
+      <!-- Right Side (With Dots) -->
+      <path d="M35 20 L70 0 V110 L35 130 Z" fill="#b91c1c" />
+      <path d="M35 20 L70 0 V110 L35 130 Z" fill="url(#dotPattern)" opacity="0.8" />
+      <!-- Left Face -->
+      <path d="M0 0 L35 20 V130 L0 110 Z" fill="url(#serverFront)" />
+      <!-- Edge highlights -->
+      <path d="M35 20 V130" stroke="rgba(0,0,0,0.1)" stroke-width="1"/>
+    </g>
+
+    <!-- Server 2 (Middle) -->
+    <g transform="translate(80, 40)">
+      <!-- Top -->
+      <path d="M0 0 L35 -20 L70 0 L35 20 Z" fill="url(#serverTop)" stroke="#b91c1c" stroke-width="1"/>
+      <!-- Right Side (With Dots) -->
+      <path d="M35 20 L70 0 V150 L35 170 Z" fill="#b91c1c" />
+      <path d="M35 20 L70 0 V150 L35 170 Z" fill="url(#dotPattern)" opacity="0.8" />
+      <!-- Left Face -->
+      <path d="M0 0 L35 20 V170 L0 150 Z" fill="url(#serverFront)" />
+      <path d="M35 20 V170" stroke="rgba(0,0,0,0.1)" stroke-width="1"/>
+    </g>
+
+    <!-- Server 3 (Right, Tallest) -->
+    <g transform="translate(160, 0)">
+       <!-- Top -->
+      <path d="M0 0 L35 -20 L70 0 L35 20 Z" fill="url(#serverTop)" stroke="#b91c1c" stroke-width="1"/>
+      <!-- Right Side (With Dots) -->
+      <path d="M35 20 L70 0 V190 L35 210 Z" fill="#b91c1c" />
+      <path d="M35 20 L70 0 V190 L35 210 Z" fill="url(#dotPattern)" opacity="0.8" />
+      <!-- Left Face -->
+      <path d="M0 0 L35 20 V210 L0 190 Z" fill="url(#serverFront)" />
+      <path d="M35 20 V210" stroke="rgba(0,0,0,0.1)" stroke-width="1"/>
+    </g>
+
+    <!-- Magnifying Glass (Overlaid) -->
+    <g transform="translate(130, 100) rotate(-30)">
+       <!-- Handle Shadow -->
+       <!-- Handle -->
+       <g transform="translate(60, 110)">
+         <rect x="0" y="0" width="30" height="90" rx="15" fill="#f9fafb" stroke="#d1d5db" stroke-width="1"/>
+         <!-- Handle dots/texture -->
+         <circle cx="10" cy="70" r="1.5" fill="#9ca3af"/>
+         <circle cx="20" cy="75" r="1.5" fill="#9ca3af"/>
+         <circle cx="15" cy="60" r="1.5" fill="#9ca3af"/>
+         <circle cx="22" cy="50" r="1.5" fill="#9ca3af"/>
+         <circle cx="8" cy="40" r="1.5" fill="#9ca3af"/>
+         <!-- Red Tip -->
+         <path d="M0 75 A 15 15 0 0 0 30 75 L 30 80 Q 30 90 15 90 Q 0 90 0 80 Z" fill="#dd2f10"/>
+       </g>
+
+       <!-- Rim -->
+       <circle cx="75" cy="55" r="70" fill="rgba(200, 230, 255, 0.3)" stroke="#dd2f10" stroke-width="12"/>
+       
+       <!-- Inner Rim Reflection -->
+       <circle cx="75" cy="55" r="64" fill="none" stroke="white" stroke-width="2" opacity="0.5"/>
+
+       <!-- Glass Reflection -->
+       <path d="M45 40 Q 65 25 85 30" stroke="white" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.8"/>
+       <path d="M50 55 Q 60 50 70 52" stroke="white" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.6"/>
+
+       <!-- Server distortion inside glass (Simplified by just drawing a slightly larger/shifted version of server parts masked? Hard in simple SVG. Let's just do a tint) -->
+       <circle cx="75" cy="55" r="64" fill="#a5f3fc" opacity="0.1" style="mix-blend-mode: overlay;"/>
+    </g>
+  </g>
+</svg>

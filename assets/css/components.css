@@ -1,0 +1,49 @@
+/* Btn S */
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-family: var(--font-primary);
+    font-weight: var(--fw-body-strong);
+    line-height: 1;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.2s ease;
+  }
+
+  /* Primary Button */
+  .btn-primary {
+    background: var(--btn-primary-bg);
+    border-color: var(--btn-primary-border);
+    color: var(--btn-primary-text);
+  }
+
+  /* Primary Outline */
+  .btn-primary-outline {
+    background: var(--btn-primary-outline-bg);
+    border-color: var(--btn-primary-outline-border);
+    color: var(--btn-primary-outline-text);
+  }
+
+  /* Secondary Button */
+  .btn-secondary {
+    background: var(--btn-secondary-bg);
+    border-color: var(--btn-secondary-border);
+    color: var(--btn-secondary-text);
+  }
+
+  /* Tertiary Button */
+  .btn-tertiary {
+    background: var(--btn-tertiary-bg);
+    border-color: var(--btn-tertiary-border);
+    color: var(--btn-tertiary-text);
+  }
+
+  /* Tertiary Outline */
+  .btn-tertiary-outline {
+    background: var(--btn-tertiary-outline-bg);
+    border-color: var(--btn-tertiary-outline-border);
+    color: var(--btn-tertiary-outline-text);
+  }
+/* Btn E */

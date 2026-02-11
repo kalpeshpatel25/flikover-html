@@ -1,0 +1,29 @@
+@import url("./tokens.css");
+@import url("./layout.css");
+@import url("./components.css");
+
+
+/* global.css */
+* { box-sizing: border-box; }
+body {
+  font-family: var(--font-primary);
+  font-weight: var(--fw-body);
+  line-height: var(--line-height-base);
+  color: var(--color-body-primary);
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: var(--fw-heading);
+  color: var(--color-heading);
+  margin: 0;
+}
+
+a {
+  color: var(--color-link);
+  text-decoration: none;
+}
+
+.section {
+  margin-bottom: var(--section-spacing-y);
+}

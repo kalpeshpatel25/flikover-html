@@ -1,0 +1,294 @@
+/* ==== EDIT PROFILE PAGE STYLES ==== */
+
+.edit-profile-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.profile-card {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    display: flex;
+    overflow: hidden;
+    min-height: 500px; /* Ensure decent height */
+}
+
+/* ==== SIDEBAR STYLES S ==== */
+.profile-sidebar {
+    width: 280px;
+    background: #ecf6fd;
+    padding: 32px 20px;
+    border-right: 1px solid #e5e7eb;
+    flex-shrink: 0;
+}
+
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.nav-item {
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #374151;
+    text-decoration: none;
+    transition: all 0.2s;
+    text-align: left;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    width: 100%;
+}
+
+.nav-item:hover {
+    background: #e0f2fe;
+    color: #111;
+}
+
+.nav-item.active {
+    background: #2e7bb6;
+    color: white;
+    font-weight: 600;
+    box-shadow: 0 2px 4px rgba(46, 123, 182, 0.2);
+}
+/* ==== SIDEBAR STYLES E ==== */
+
+/* ==== FORM ELEMENT STYLES S ==== */
+.profile-content {
+    flex: 1;
+    padding: 40px;
+    background: #fff;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    margin-bottom: 32px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-label {
+    font-size: 15px;
+    font-weight: 600;
+    color: #111;
+    margin-bottom: 4px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 15px;
+    color: #111;
+    outline: none;
+    transition: border-color 0.2s;
+    font-family: 'DM Sans', sans-serif;
+    background: #fff;
+}
+
+.form-input:focus {
+    border-color: #2e7bb6;
+}
+
+.form-input[readonly] {
+    background-color: #f3f4f6;
+    color: #6b7280;
+    cursor: default;
+}
+
+.btn-save {
+    background: #2e7bb6;
+    color: white;
+    border: none;
+    padding: 14px 64px;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.2s;
+    display: inline-block;
+}
+
+.btn-save:hover {
+    background: #266aa1;
+}
+/* ==== FORM ELEMENT STYLES E ==== */
+
+/* ==== SIDEBAR RESPONSIVE S ==== */
+.profile-sidebar {
+    width: 280px;
+    background: #ecf6fd;
+    padding: 32px 20px;
+    border-right: none;
+}
+
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.nav-item {
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #111;
+    text-decoration: none;
+    transition: all 0.2s;
+    text-align: left;
+    display: block;
+}
+
+.nav-item.active {
+    background: #2e7bb6;
+    color: white;
+    font-weight: 500;
+    box-shadow: 0 2px 4px rgba(46, 123, 182, 0.2);
+}
+
+.nav-item:hover:not(.active) {
+    background: rgba(46, 123, 182, 0.1);
+}
+/* ==== SIDEBAR RESPONSIVE E ==== */
+
+
+/* ==== MEDIA QUERIES S ==== */
+@media (max-width: 768px) {
+    .profile-card {
+        flex-direction: column;
+    }
+
+    .profile-sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #e5e7eb;
+        padding: 20px;
+    }
+
+    .sidebar-nav {
+        flex-direction: row;
+        overflow-x: auto;
+        padding-bottom: 4px;
+    }
+
+    .nav-item {
+        white-space: nowrap;
+        width: auto;
+    }
+
+    .profile-content {
+        padding: 24px;
+    }
+
+    .form-grid, .grid-4-cols {
+        grid-template-columns: 1fr;
+    }
+}
+/* ==== MEDIA QUERIES E ==== */
+
+/* ==== CHANGE DETAILS STYLES S ==== */
+.form-section-title {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 500;
+    color: #111;
+    margin-bottom: 24px;
+    margin-top: 8px;
+}
+
+.form-section-title::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #e5e7eb;
+    margin-left: 16px;
+}
+
+.grid-4-cols {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-bottom: 24px;
+}
+/* ==== CHANGE DETAILS STYLES E ==== */
+
+/* ==== PASSWORD MODAL S ==== */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent dark background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    backdrop-filter: blur(2px); /* Slight blur effect */
+}
+
+.modal-content {
+    background: white;
+    width: 100%;
+    max-width: 450px;
+    padding: 40px 32px;
+    border-radius: 24px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    text-align: center;
+    position: relative;
+    animation: modalFadeIn 0.2s ease-out;
+}
+
+@keyframes modalFadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+.modal-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    color: #111;
+}
+
+/* Override form group for modal specific alignment */
+.modal-content .form-group {
+    text-align: left;
+    margin-bottom: 32px;
+}
+
+.btn-submit-modal {
+    background: #2e7bb6;
+    color: white;
+    border: none;
+    padding: 12px 48px;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.2s;
+    box-shadow: 0 4px 6px rgba(46, 123, 182, 0.2);
+}
+
+.btn-submit-modal:hover {
+    background: #266aa1;
+}
+/* ==== PASSWORD MODAL E ==== */
+
