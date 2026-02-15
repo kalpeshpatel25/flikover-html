@@ -159,10 +159,444 @@
 }
 
 
-/* =========================================
-   SECTION SPACING
-========================================= */
-
-.section {
-    margin-bottom: var(--section-spacing-y);
+/* ==== HEADER SECTION S ==== */
+.site-header {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #fff;
+  border-bottom: 1px solid #eaeaea;
 }
+
+.site-header .container {
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+}
+/* ==== HEADER SECTION E ==== */
+
+/* ==== FOOTER SECTION S ==== */
+.site-footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #200B08; 
+  border-top: 1px solid #333;   
+  font-size: 14px;
+  color: #fff; 
+}
+
+.site-footer .container {
+  display: flex !important; 
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.footer-left a {
+  color: #fff; 
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-left a:hover {
+  color: #ccc;
+  text-decoration: underline;
+}
+
+.separator {
+  margin: 0 4px;
+  color: #666;
+}
+
+.footer-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.payment-logo {
+  width: 60px; 
+  height: auto;
+  filter: grayscale(100%); 
+  opacity: 0.6;
+  transition: all 0.2s ease;
+}
+
+.payment-logo:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: translateY(-1px);
+}
+/* ==== FOOTER SECTION E ==== */
+
+/* ==== HEADER 2 (DASHBOARD) S ==== */
+.site-header-2 {
+  background-color: #fff;
+  border-top: 3px solid #1a73e8; /* Blue strip from image */
+  border-bottom: 1px solid #EAEAEA;
+  padding: 16px 24px; 
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, .10), 0 2px 4px -1px rgba(0, 0, 0, 0.03); 
+  position: relative;
+  z-index: 10;
+}
+
+.site-header-2 .header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.site-header-2 .header-left,
+.site-header-2 .header-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.site-header-2 .header-right {
+  justify-content: flex-end;
+}
+
+.site-header-2 .site-logo img {
+  display: block;
+  width: 110px; 
+  height: auto;
+}
+
+.site-header-2 .header-nav {
+  display: flex;
+  align-items: center;
+  gap: 32px; 
+}
+
+.site-header-2 .logout-btn {
+  display: inline-block;
+  padding: 8px 24px;
+  border: 1px solid #CCCCCC;
+  border-radius: 50px;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  color: #333;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  display: none;
+}
+
+.site-header-2 .logout-btn:hover {
+  background-color: #f8f9fa;
+  border-color: #999;
+}
+
+.site-header-2 .nav-link {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 17px;
+  color: #000;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.site-header-2 .nav-link:hover {
+  color: #DD2F10; 
+}
+
+/* Mobile Toggle Buttons */
+.mobile-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 18px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 100;
+}
+
+.mobile-toggle span {
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Red Hide Logout on Desktop */
+.nav-logout-mobile {
+  display: none !important;
+}
+
+@media (max-width: 991px) {
+  .site-header-2 {
+    padding: 12px 20px;
+  }
+
+  .site-header-2 .header-right {
+    display: none; /* Hide desktop logout */
+  }
+
+  .mobile-toggle {
+    display: flex;
+    margin-left: auto;
+  }
+
+  .site-header-2 .header-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 280px; 
+    height: 100vh;
+    background-color: #fff;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 0 30px 0; 
+    gap: 0;
+    transform: translateX(100%);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: -10px 0 30px rgba(0,0,0,0.1);
+    z-index: 999;
+    display: flex;
+  }
+
+  .site-header-2 .header-nav.active {
+    transform: translateX(0); /* Slide in */
+  }
+
+  .site-header-2 .nav-link {
+    width: 100%;
+    padding: 18px 0;
+    font-size: 17px;
+    font-weight: 500;
+    color: #333;
+    border-bottom: 1px solid #f5f5f5;
+    display: block;
+    text-align: center;
+  }
+
+  .nav-logout-mobile {
+    display: block !important;
+    width: 100%;
+    padding: 18px 0;
+    color: #DD2F10 !important;
+    font-size: 17px;
+    font-weight: 600;
+    border-bottom: 1px solid #f5f5f5;
+    text-align: center;
+  }
+
+  /* Mobile Toggle Buttons */
+  .mobile-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 26px;
+    height: 18px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 100;
+    margin-left: auto;
+  }
+
+  .mobile-toggle span {
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
+
+  /* New Dedicated Drawer Close */
+  .drawer-close {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 36px;
+    line-height: 1;
+    color: #DD2F10;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    padding: 10px;
+    z-index: 10;
+  }
+
+  .mobile-toggle.active {
+    display: none; /* Hide toggle when drawer is open */
+  }
+
+  .mobile-toggle span {
+    background-color: #000;
+    height: 2px;
+  }
+
+  .mobile-toggle.active span {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .site-header-2 .site-logo img {
+    width: 90px;
+  }
+}
+
+
+.btn-outline-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 24px;
+  background-color: transparent;
+  border: 1px solid #000; 
+  border-radius: 999px; 
+  font-weight: 500;
+  font-size: 14px;
+  color: #000;
+  text-decoration: none;
+  transition: all 0.2s;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.btn-outline-pill:hover {
+  background-color: transparent;
+  color: #000;
+  border-color: #000;
+}
+/* ==== HEADER 2 (DASHBOARD) E ==== */
+
+/* ==== FOOTER 2 (DASHBOARD/ACCESS) S ==== */
+.site-footer-2 {
+  background-color: #E6E6E6; 
+  border-top: 1px solid #d1d5db; 
+  padding-top: 23px; 
+  padding-bottom: 23px;
+  font-family: inherit;
+  color: #333;
+}
+
+.site-footer-2 .footer-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px; 
+}
+
+.site-footer-2 .secondary-row {
+  margin-bottom: 0;
+}
+
+.site-footer-2 .footer-contact {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.site-footer-2 .footer-contact i {
+  display: flex;
+  align-items: center;
+  color: #000;
+}
+
+.site-footer-2 .footer-contact a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1; 
+}
+
+.site-footer-2 .footer-payment {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.site-footer-2 .pay-label {
+  font-size: 18px;
+  font-weight: 800;
+  color: #6b7280; 
+  text-transform: uppercase;
+  letter-spacing: -0.5px;
+}
+
+.site-footer-2 .mastercard-logo {
+  display: flex;
+  align-items: center;
+}
+
+.site-footer-2 .footer-support {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.site-footer-2 .support-label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+.site-footer-2 .btn-contact-us {
+  display: inline-block;
+  background-color: #3b82f6; 
+  color: #fff;
+  padding: 8px 30px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  transition: opacity 0.2s;
+}
+
+.site-footer-2 .btn-contact-us:hover {
+  opacity: 0.9;
+}
+
+.site-footer-2 .footer-copyright {
+  font-size: 13px;
+  color: #4b5563;
+  font-weight: 500;
+}
+
+.site-footer-2 .footer-copyright a {
+  color: #4b5563;
+  text-decoration: none;
+}
+
+.site-footer-2 .footer-copyright a:hover {
+  text-decoration: underline;
+}
+
+.site-footer-2 .dot-sep {
+  margin: 0 4px;
+}
+
+@media (min-width: 768px) {
+  .site-footer-2 .footer-row {
+    flex-direction: row;
+    gap: 10px;
+  }
+}
+
+.site-footer-2 .container {
+    max-width: 1200px !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+/* ==== FOOTER 2 (DASHBOARD/ACCESS) E ==== */
+

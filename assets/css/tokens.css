@@ -49,8 +49,8 @@
   --btn-tertiary-outline-text: #3279B7;
 
   /* LAYOUT SYSTEM */
-  --container-max-width: 1200px;
-  --container-padding-x: 15px;
+  --container-max-width: 1180px;
+  --container-padding-x: 16px;
 
   --section-spacing-y: 50px;
 }

@@ -1,21 +1,20 @@
-@import url("./tokens.css");
-@import url("./layout.css");
-@import url("./components.css");
+/* Imports moved to HTML head for better reliability */
 
 
 /* global.css */
 * { box-sizing: border-box; }
 body {
-  font-family: var(--font-primary);
-  font-weight: var(--fw-body);
-  line-height: var(--line-height-base);
-  color: var(--color-body-primary);
+  font-family: 'DM Sans', system-ui, sans-serif;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #3A3A3A;
   margin: 0;
+  overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: var(--fw-heading);
-  color: var(--color-heading);
+  font-weight: 600;
+  color: #000000;
   margin: 0;
 }
 
@@ -26,4 +25,20 @@ a {
 
 .section {
   margin-bottom: var(--section-spacing-y);
+}
+.renew-button {
+    background-color:#337ab7;
+    color: #ffffff;
+    padding: 10px 48px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    border: none;
+}
+
+.renew-button:hover {
+    background-color: #286090;
+    transform: translateY(-1px);
 }
