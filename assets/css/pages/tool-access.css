@@ -1,5 +1,6 @@
-/* CSS for Tool Access Page */
+/* ====TOOL ACCESS PAGE STYLES S ==== */
 
+/* === MAIN LAYOUT SECTION S=== */
 body {
     background-color: #f8f9fa;
     margin: 0;
@@ -9,19 +10,19 @@ body {
 
 .tool-access-container {
     max-width: 1280px;
-    margin: 0 auto;
+    margin: 40px auto 30px; 
     padding: 0 15px;
 }
 
 .main-white-container {
     background-color: #ffffff;
-    border-radius: 0 0 20px 20px;
-    padding: 30px 30px 30px 30px;
+    border-radius: 20px;
+    padding: 30px 20px 30px 20px;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
 }
+/* === MAIN LAYOUT SECTION E=== */
 
-
-
+/* === ACTIVE TOOL CARD SECTION S=== */
 .active-tool-card {
     background-color: #ffffff;
     border: 1px solid #e0e0e0;
@@ -113,10 +114,9 @@ body {
     color: #6c757d;
     font-weight: 400;
 }
+/* === ACTIVE TOOL CARD SECTION E=== */
 
-/* Tool Details Section */
-
-
+/* === TOOL DETAILS SECTION S=== */
 .details-grid {
     display: flex;
     justify-content: space-between;
@@ -189,8 +189,9 @@ body {
 .important-warning {
     color: #e53e3e !important;
 }
+/* === TOOL DETAILS SECTION E=== */
 
-/* Large Access Button */
+/* === LARGE BUTTONS & ALERTS SECTION S=== */
 .large-access-button {
     display: flex;
     flex-direction: column;
@@ -269,33 +270,95 @@ body {
 }
 
 /* Responsive adjustments */
-@media (max-width: 1100px) {
+@media (max-width: 1366px) {
+    .active-tool-card {
+        padding: 20px;
+    }
+    .tool-logo {
+        flex: 0 0 180px;
+    }
     .tool-info-items {
         gap: 30px;
+    }
+    .info-group:not(:first-child)::before {
+        left: -15px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .tool-info-items {
+        gap: 20px;
+    }
+    .info-group:not(:first-child)::before {
+        left: -10px;
     }
 }
 
 @media (max-width: 992px) {
     .active-tool-card {
-        flex-direction: column;
-        text-align: center;
-        padding: 40px 20px;
-        gap: 30px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px;
+        gap: 10px;
+        flex-wrap: nowrap;
+        overflow-x: auto;
     }
+
     .tool-logo {
         flex: 0 0 auto;
+        margin-right: 5px;
     }
+    
+    .tool-logo img {
+        height: 24px;
+    }
+
     .tool-info-items {
-        justify-content: center;
-        width: 100%;
+        flex: 1;
+        justify-content: space-around;
+        gap: 10px;
+        width: auto;
     }
+    
+    .info-group {
+        min-width: auto;
+    }
+
+    .info-val {
+        font-size: 14px;
+        white-space: nowrap;
+    }
+
+    .info-lbl {
+        font-size: 10px;
+        white-space: nowrap;
+        display: none;
+    }
+    
+    .info-lbl { display: block; }
+
+    .renew-button {
+        padding: 6px 15px;
+        font-size: 12px;
+        white-space: nowrap;
+        min-width: auto;
+    }
+
+    .vertical-divider {
+        display: none !important;
+    }
+
+    .tool-actions {
+        min-width: auto;
+        margin-left: 5px;
+    }
+
     .details-grid {
         flex-direction: column;
         gap: 30px;
     }
-    .vertical-divider {
-        display: none;
-    }
+
     .details-col {
         padding: 0;
     }
@@ -315,10 +378,235 @@ body {
 }
 
 @media (max-width: 600px) {
+    .active-tool-card {
+        flex-direction: column;
+        height: auto;
+        padding: 30px 20px;
+        gap: 25px;
+        overflow-x: visible;
+        align-items: center;
+        justify-content: center;
+    }
+
     .tool-info-items {
         flex-direction: column;
         gap: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .tool-logo {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+
+    .tool-logo img {
+        height: 36px;
+    }
+
+    .info-lbl {
+        display: block;
+        font-size: 13px;
+        white-space: normal;
+    }
+
+    .info-val {
+        font-size: 18px;
+        white-space: normal;
+    }
+
+    .info-group:not(:first-child)::before {
+        content: "";
+        position: absolute;
+        width: 100%;       
+        max-width: 80px;  
+        height: 1px;       
+        top: -10px;        
+        left: 50%;         
+        transform: translateX(-50%); 
+        background-color: #EAEAEA;
+    }
+
+    .tool-actions {
+        margin-left: 0;
+        margin-top: 10px;
+        align-items: center;
+    }
+    
+    .renew-button {
+        padding: 10px 40px;
+        font-size: 14px;
+    }
+
+    .large-access-button, 
+    .package-access-alert,
+    .plugin-status-alert {
+        text-align: center;
+    }
+}
+
+.combo-pricing-wrapper {
+    margin-top: 50px;
+    text-align: center;
+    padding: 50px 20px;
+    background: #fff;
+    border-radius: 20px;
+}
+
+.combo-header-section {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.combo-main-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 5px;
+}
+
+.combo-sub-title {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+
+
+.header-underline {
+    height: 2px;
+    width: 30%;
+    background-color: #337ab7;
+    margin: 0 auto 20px;
+}
+
+.combo-question-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 30px;
+}
+
+.combo-pricing-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center; 
+}
+
+.combo-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 30px 20px;
+    width: 240px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border: 1px solid #EAEAEA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.popular-body {
+    padding: 24px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+.combo-duration {
+    font-size: 28px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.combo-card.popular-card {
+    padding: 0;
+    background: #fff;
+    border: 2px solid #337ab7;
+    overflow: hidden;
+    transform: scale(1.05); 
+    z-index: 2;
+}
+
+.popular-header {
+    background-color: #337ab7;
+    color: #fff;
+    width: 100%;
+    padding: 8px 0;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.combo-save-pill {
+    background-color: #ebf5fb;
+    color: #337ab7;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 6px 16px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.combo-cost {
+    font-size: 14px;
+    color: #337ab7;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.combo-buy-btn {
+    background-color: transparent;
+    color: #337ab7;
+    padding: 10px 40px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    transition: all 0.2s;
+    display: inline-block;
+    border: 1px solid #337ab7;
+}
+
+.combo-buy-btn:hover {
+    background-color: #337ab7;
+    color: #fff;
+}
+
+@media (max-width: 992px) {
+    .combo-pricing-grid {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .combo-card {
+        width: 100%;
+        max-width: 320px;
+    }
+    .combo-card.popular-card {
+        transform: scale(1);
     }
 }
 
 
+@media (max-width: 768px) {
+    .tool-access-container {
+        padding-left: 0;
+        padding-right: 0;
+        width: 90%; 
+        margin: 40px auto 40px;
+    }
+
+    .main-white-container {
+        padding: 30px 20px;
+        border-radius: 20px; 
+        width: 100%; 
+    }
+}

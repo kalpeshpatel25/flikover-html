@@ -4,11 +4,12 @@ $page_css = 'dashboard.css'; // Link the new CSS
 include('includes/header.php');
 ?>
 
+<!-- === MAIN LAYOUT SECTION S === -->
 <div class="tool-access-container">
 
-    <!-- WELCOME & COMBO PLANS SECTION S -->
+    <!-- === WELCOME & COMBO PLANS SECTION S === -->
     <div class="content-box">
-        <!-- WELCOME SECTION S -->
+        <!-- === WELCOME SECTION S === -->
         <div class="welcome-section">
             <div class="welcome-left">
                 <div class="welcome-text">
@@ -20,11 +21,11 @@ include('includes/header.php');
                 <a href="#" class="notes-link">Show notes here</a>
             </div>
         </div>
-        <!-- WELCOME SECTION E -->
+        <!-- === WELCOME SECTION E === -->
 
-        <!-- COMBO PLANS SECTION S -->
+        <!-- === COMBO PLANS SECTION S === -->
         <div class="plans-wrapper">
-            <!-- CARD 1 -->
+            <!-- === COMBO PLAN CARD 1 S === -->
             <div class="plan-card">
                 <div class="plan-header">
                     <h3 class="plan-title">Combo Plan</h3>
@@ -40,8 +41,9 @@ include('includes/header.php');
                     </li>
                 </ul>
             </div>
+            <!-- === COMBO PLAN CARD 1 E === -->
 
-            <!-- CARD 2 -->
+            <!-- === COMBO PLAN CARD 2 S === -->
             <div class="plan-card">
                 <div class="top-seller-badge">
                      <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -70,11 +72,13 @@ include('includes/header.php');
                 </ul>
             </div>
         </div>
-        <!-- COMBO PLANS SECTION E -->
-    </div>
-    <!-- WELCOME & COMBO PLANS SECTION E -->
+            <!-- === COMBO PLAN CARD 2 E === -->
+        </div>
+        <!-- === COMBO PLANS SECTION E === -->
 
-    <!-- SINGLE PRODUCT PLANS SECTION S -->
+    <!-- === WELCOME & COMBO PLANS SECTION E === -->
+
+    <!-- === SINGLE PRODUCT PLANS SECTION S === -->
     <div class="content-box rounded-top">
         <h3 class="single-plans-title">Single Product Plans</h3>
         
@@ -117,8 +121,9 @@ include('includes/header.php');
             <?php endforeach; ?>
         </div>
     </div>
+    <!-- === SINGLE PRODUCT PLANS SECTION E === -->
 
-     <!-- TESTING TOOLS SECTION S -->
+     <!-- === TESTING TOOLS SECTION S === -->
     <div class="content-box rounded-top">
         <h3 class="single-plans-title">Testing tools(only for combo & mini user)</h3>
         
@@ -152,12 +157,12 @@ include('includes/header.php');
         </div>
     </div>
 
-    <!-- TESTING TOOLS SECTION E -->
+    <!-- === TESTING TOOLS SECTION E === -->
 
 </div>
-<!-- CONTAINER E -->
+<!-- === MAIN LAYOUT SECTION E === -->
 
-<!-- PRODUCT LOGO GRID MODAL S -->
+<!-- === PRODUCT LOGO GRID MODAL SECTION S === -->
 <div id="product-modal" class="modal-overlay">
     <div class="modal-container modal-lg">
         <div class="modal-header">
@@ -199,9 +204,9 @@ include('includes/header.php');
         </div>
     </div>
 </div>
-<!-- PRODUCT LOGO GRID MODAL E -->
+<!-- === PRODUCT LOGO GRID MODAL SECTION E === -->
 
-<!-- EXPIRY NOTIFICATION MODAL S -->
+<!-- === EXPIRY NOTIFICATION MODAL SECTION S === -->
 <div id="expiry-modal" class="modal-overlay">
     <div class="modal-container modal-md">
         <div class="modal-header">
@@ -221,9 +226,9 @@ include('includes/header.php');
         </div>
     </div>
 </div>
-<!-- EXPIRY NOTIFICATION MODAL E -->
+<!-- === EXPIRY NOTIFICATION MODAL SECTION E === -->
 
-<!-- VIDEO INSTRUCTION MODAL S -->
+<!-- === VIDEO INSTRUCTION MODAL SECTION S === -->
 <div id="video-modal" class="modal-overlay">
     <div class="modal-container modal-md">
         <div class="modal-header">
@@ -244,9 +249,9 @@ include('includes/header.php');
         </div>
     </div>
 </div>
-<!-- VIDEO INSTRUCTION MODAL E -->
+<!-- === VIDEO INSTRUCTION MODAL SECTION E === -->
 
-<!-- PAGE SCRIPTS S -->
+<!-- === PAGE SCRIPTS SECTION S === -->
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     const overlays = document.querySelectorAll('.modal-overlay');
@@ -323,6 +328,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 </script>
-<!-- PAGE SCRIPTS E -->
+<!-- === PAGE SCRIPTS SECTION E === -->
 
 <?php include('includes/footer2.php'); ?>

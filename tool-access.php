@@ -4,11 +4,12 @@ $page_css = 'tool-access.css';
 include('includes/header.php');
 ?>
 
+<!-- === MAIN LAYOUT SECTION S === -->
 <div class="tool-access-container">
 
     <div class="main-white-container">
-        <!-- Horizontal Tool Row -->
-
+    <div class="main-white-container">
+        <!-- === ACTIVE TOOL CARD SECTION S === -->
         <div class="active-tool-card">
             <div class="tool-logo">
                 <img src="assets/images/ahrefs 2.png" alt="Ahrefs">
@@ -43,11 +44,13 @@ include('includes/header.php');
 
             
         </div>
+        <!-- === ACTIVE TOOL CARD SECTION E === -->
 
-        <!-- Tool Details Section -->
+        <!-- === TOOL DETAILS SECTION S === -->
         <div class="tool-details-content">
             <div class="details-grid">
-                <!-- Left Column -->
+
+                <!-- === LEFT COLUMN S === -->
                 <div class="details-col">
                     <h4 class="details-title">Steps to access Ahrefs</h4>
                     <ol class="steps-list">
@@ -62,11 +65,12 @@ include('includes/header.php');
                         </ul>
                     </div>
                 </div>
+                <!-- === LEFT COLUMN E === -->
 
-                <!-- Vertical Divider -->
+                <!-- === VERTICAL DIVIDER S === -->
                 <div class="vertical-divider"></div>
 
-                <!-- Right Column -->
+                <!-- === RIGHT COLUMN S === -->
                 <div class="details-col">
                     <h4 class="details-title">Important things to Note</h4>
                     <ul class="simple-list">
@@ -75,30 +79,40 @@ include('includes/header.php');
                         <li class="important-warning">If you share access then account will be automatically block by our system.</li>                        
                     </ul>
                 </div>
+                <!-- === RIGHT COLUMN E === -->
             </div>
 
-            <!-- Large Access Button -->
+            <!-- === LARGE ACCESS BUTTON S === -->
             <a href="#" class="large-access-button">
                 <span class="main-text">Click here to access Ahrefs</span>
                 <span class="sub-text">In semrush, for siteaudit & adding project access "from here"</span>
             </a>
 
-            <!-- Package Access Alert -->
+            </a>
+            <!-- === LARGE ACCESS BUTTON E === -->
+
+            <!-- === PACKAGE ACCESS ALERT S === -->
             <div class="package-access-alert">
                 You need to buy Package to access Ahrefs
             </div>
 
-            <!-- Plugin Status Alert -->
+            </div>
+            <!-- === PACKAGE ACCESS ALERT E === -->
+
+            <!-- === PLUGIN STATUS ALERT S === -->
             <div class="plugin-status-alert">
                 <div class="main-msg">Both Flikover Plugins <a href="#">Flikover 1</a> and <a href="#">Flikover 2</a> are not active together.</div>
                 <div class="sub-msg">Enable both plugin and then refresh this page to access tool.</div>
             </div>
+            <!-- === PLUGIN STATUS ALERT E === -->
         </div>
+        <!-- === TOOL DETAILS SECTION E === -->
     </div>
-
-
 </div>
+<!-- === MAIN LAYOUT SECTION E === -->
 
+<!-- === FOOTER SECTION S === -->
 <?php 
 include('includes/footer2.php'); 
 ?>
+<!-- === FOOTER SECTION E === -->

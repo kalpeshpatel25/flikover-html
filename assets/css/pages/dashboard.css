@@ -5,15 +5,16 @@ body {
 
 .tool-access-container {
     max-width: 1200px;
-    margin: 0 auto;
-    padding-bottom: 30px;
+    margin: 40px auto;
+    padding: 0 20px 30px;
 }
 
 .content-box {
     background-color: #ffffff;
-    padding: 22px 30px 30px 30px;
-    border-radius: 0 0 20px 20px;
+    padding: 30px 20px 30px 20px;
+    border-radius: 20px;
     margin-bottom: 30px; 
+    
 }
 
 .content-box:last-child {
@@ -92,6 +93,7 @@ body {
     justify-content: space-between;
     position: relative;
     box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+    border: 1px solid #EAEAEA;
 }
 
 .plan-header {
@@ -174,8 +176,8 @@ body {
     border-radius: 6px;
     font-size: 12px;
     font-weight: 500;
-    width: 200px; /* Fixed width as requested */
-    white-space: normal; /* Allow text wrapping */
+    width: 200px; 
+    white-space: normal; 
     text-align: center;
     opacity: 0;
     visibility: hidden;
@@ -186,7 +188,7 @@ body {
     font-family: inherit;
 }
 
-/* Small Triangle for Tooltip */
+
 .info-icon::before {
     content: "";
     position: absolute;
@@ -251,13 +253,13 @@ body {
     transform: translateY(-1px);
 }
 
-/* Top Seller Badge */
+
 .top-seller-badge {
     position: absolute;
     top: -15px;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 10;
+    z-index: 5;
 }
 
 .top-seller-badge svg {
@@ -341,9 +343,7 @@ body {
     background-color: #eff6ff;
 }
 
-/* RESPONSIVE DESIGN FOR DASHBOARD */
 
-/* Tablets (1024px and down) */
 @media (max-width: 1024px) {
     .single-plans-grid {
         grid-template-columns: repeat(3, 1fr);
@@ -351,16 +351,19 @@ body {
     }
 }
 
-/* Small Tablets / Large Mobile (768px and down) */
+
 @media (max-width: 768px) {
     .tool-access-container {
         padding-left: 0;
         padding-right: 0;
+        width: 90%; 
+        margin: 40px auto 20px;
     }
 
     .content-box {
-        padding: 20px 0;
-        border-radius: 0; /* Remove radius to look better edge-to-edge */
+        padding: 30px 20px;
+        border-radius: 12px; 
+        width: 100%; 
     }
 
     .welcome-section {
@@ -394,46 +397,86 @@ body {
     }
 }
 
-/* Mobile (480px and down) */
+
 @media (max-width: 480px) {
     .welcome-text h2 {
         font-size: 18px;
     }
 
     .plan-header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 5px;
+        flex-direction: row;
+        align-items: center; 
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .plan-title {
+        font-size: 16px; 
+        margin-bottom: 0;
     }
 
     .plan-price {
         margin-left: 0;
-        text-align: left;
+        text-align: right;
+        font-size: 16px; 
+        white-space: nowrap;
     }
 
     .plan-features li {
-        white-space: normal;
-        align-items: flex-start;
+        white-space: nowrap; 
+         align-items: center;
+         font-size: 13px; 
+         max-width: 100%; 
+         overflow: hidden; 
+         text-overflow: ellipsis; 
     }
 
     .plan-features li::before {
-        margin-top: 5px;
+        content: "";
+        display: block; 
+        width: 6px;
+        height: 6px;
+        background-color: #FF5722;
+        border-radius: 50%;
+        margin-right: 8px; 
+        flex-shrink: 0;
+        margin-top: 0;
+        font-size: 0;
+        line-height: 0;
+        position: static; 
     }
 
     .buy-now-btn {
         padding: 10px 30px;
         width: 100%;
         text-align: center;
+        flex-basis: 100%;
+        margin-top: 12px; 
     }
 
-    .feature-with-action {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
+    .plan-features .feature-with-action {
+        flex-direction: row; 
+        flex-wrap: wrap;     
+        align-items: center; 
+        gap: 0; 
+    }
+
+    .plan-features .feature-with-action::before {
+        margin-top: 0 !important; 
+        top: auto; 
     }
 
     .single-plans-grid {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px; 
+    }
+
+    .single-plan-card {
+        padding: 15px 10px; 
+    }
+
+    .single-plan-logo {
+        margin-bottom: 10px; 
     }
 }
 /* SINGLE PRODUCT PLANS SECTION E */
@@ -472,8 +515,7 @@ body {
     max-width: 95%;
 }
 
-/* Modal Sizes */
-.modal-lg { width: 924px; }
+    .modal-lg { width: 924px; }
 .modal-md { width: 781px; }
 
 .modal-overlay.active .modal-container {
@@ -602,6 +644,15 @@ body {
 @media (max-width: 480px) {
     .modal-logo-item {
         width: calc(50% - 20px);
+    }
+
+    .modal-container {
+        padding: 20px;
+        padding-top: 15px; 
+    }
+
+    .modal-header {
+        margin-bottom: 10px; 
     }
 }
 /* MODAL SPECIFIC COMPONENTS E */

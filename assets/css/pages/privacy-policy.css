@@ -1,0 +1,108 @@
+/* ====PRIVACY POLICY PAGE STYLES S ==== */
+
+/* === MAIN LAYOUT SECTION S=== */
+.privacy-page-wrapper {
+    background-color: #f3f3f3;
+    background-image: url('../../images/bg_image1.png');
+    background-size: cover;
+    background-position: center;
+    font-family: 'DM Sans', sans-serif;
+    color: #333;
+    padding: 40px 20px;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+}
+
+.privacy-container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+/* === MAIN LAYOUT SECTION E=== */
+
+/* === CONTENT SECTION S=== */
+.privacy-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.privacy-section {
+    margin-bottom: 10px;
+}
+
+.privacy-label {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 2px;
+    display: block;
+    color: #000;
+}
+
+.privacy-text {
+    font-size: 15px;
+    line-height: 1.4;
+    color: #444;
+    margin-bottom: 5px;
+}
+/* === CONTENT SECTION E=== */
+
+/* === FOOTER SECTION S=== */
+.last-updated {
+    margin-top: 40px;
+    font-size: 14px;
+    color: #666;
+    font-style: italic;
+}
+
+.privacy-footer-divider {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 40px 0 20px;
+}
+
+.privacy-footer-links {
+    text-align: center;
+    font-size: 13px;
+    color: #666;
+}
+
+.privacy-footer-links a {
+    color: #666;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.privacy-footer-links a:hover {
+    text-decoration: underline;
+    color: #3b5998;
+}
+/* === FOOTER SECTION E=== */
+
+/* === RESPONSIVE SECTION S=== */
+@media (max-width: 768px) {
+    .privacy-page-wrapper {
+        padding: 40px 20px;
+    }
+    
+    .privacy-container {
+        padding: 30px 20px;
+    }
+    
+    .privacy-title {
+        font-size: 24px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    .privacy-text {
+        font-size: 14px;
+    }
+}
+/* === RESPONSIVE SECTION E=== */

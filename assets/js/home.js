@@ -1,6 +1,8 @@
 /* assets/js/home.js */
 
 document.addEventListener('DOMContentLoaded', () => {
+
+/* === FAQ SECTION S === */
   const faqItems = document.querySelectorAll('.faq-item');
 
   faqItems.forEach(item => {
@@ -9,22 +11,20 @@ document.addEventListener('DOMContentLoaded', () => {
     const icon = item.querySelector('.faq-icon');
 
     question.addEventListener('click', (e) => {
-      e.stopPropagation(); // prevent click from bubbling to document
+      e.stopPropagation();
       
       const isOpen = item.classList.contains('active');
       
-      // Close all other items
       faqItems.forEach(otherItem => {
         if (otherItem !== item) {
-          otherItem.classList.remove('active');
-          const otherIcon = otherItem.querySelector('.faq-icon');
-          otherIcon.textContent = '+'; 
-          otherIcon.classList.remove('rotate');
-          otherItem.querySelector('.faq-answer').style.maxHeight = null;
+            otherItem.classList.remove('active');
+            const otherIcon = otherItem.querySelector('.faq-icon');
+            otherIcon.textContent = '+'; 
+            otherIcon.classList.remove('rotate');
+            otherItem.querySelector('.faq-answer').style.maxHeight = null;
         }
       });
 
-      // Toggle current item
       if (isOpen) {
         item.classList.remove('active');
         icon.textContent = '+';
@@ -39,11 +39,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Close open FAQs when clicking anywhere else
   document.addEventListener('click', (e) => {
     faqItems.forEach(item => {
       if (item.classList.contains('active')) {
-        // If click is outside the active item
         if (!item.contains(e.target)) {
           item.classList.remove('active');
           const icon = item.querySelector('.faq-icon');
@@ -54,13 +52,14 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+/* === FAQ SECTION E === */
 
-  // Slider Logic (Slick)  
+/* === TESTIMONIALS SLIDER SECTION S === */
   if ($('.testimonials-slider').length) {
     $('.testimonials-slider').slick({
       slidesToShow: 3,
       slidesToScroll: 1,
-      arrows: true,   // Slick default arrows (styled via CSS override)
+      arrows: true,
       dots: false,
       infinite: true,
       responsive: [
@@ -75,4 +74,6 @@ document.addEventListener('DOMContentLoaded', () => {
       ]
     });
   }
+/* === TESTIMONIALS SLIDER SECTION E === */
+
 });

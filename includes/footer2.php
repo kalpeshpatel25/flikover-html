@@ -1,129 +1,116 @@
 <footer class="site-footer-2">
-  <div class="container">
-    <div class="footer-new-layout">
-        
-        <!-- Part 1: Contact & Support (Left) -->
-        <div class="footer-part-1">
-            <div class="footer-contact-group">
-                 <div class="footer-contact">
-                    <i class="envelope-icon">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-                      </svg>
-                    </i>
-                    <a href="mailto:contact@flikover.com">contact@flikover.com</a>
-                  </div>
-                  
-                  <div class="footer-support">
-                    <span class="support-label">For any support:</span>
-                    <a href="#" class="btn-contact-us">Contact us</a>
-                  </div>
-            </div>
-        </div>
+  <!-- === FOOTER BOTTOM BAR S === -->
+  <div class="footer-bottom-bar">
+      <div class="container">
+          <div class="bottom-bar-content">
+              <!-- === COPYRIGHT LINKS S === -->
+              <div class="footer-copyright-links">
+                  <span>© 2016-2026 Flikover.com</span>
+                  <span class="dot-sep">·</span>
+                  <a href="#">Terms</a>
+                  <span class="dot-sep">·</span>
+                  <a href="#">Privacy</a>
+                  <span class="dot-sep">·</span>
+                  <a href="#">Disclaimer</a>
+                  <span class="dot-sep">·</span>
+                  <a href="#">Contact us</a>
+              </div>
+              <!-- === COPYRIGHT LINKS E === -->
 
-        <!-- Part 2: Payment & Copyright (Right) -->
-        <div class="footer-part-2">
-            <div class="footer-payment">
-                <img src="assets/images/paytm_logo.svg.png" alt="Paytm" class="payment-logo">
-                <img src="assets/images/path3789 (1).png" alt="Visa" class="payment-logo">
-                <img src="assets/images/Group (2).png" alt="Mastercard" class="payment-logo">
-                <img src="assets/images/1280px-UPI-Logo-vector.svg 1 (1).png" alt="UPI" class="payment-logo">
-            </div>
-            
-            <div class="footer-copyright">
-                <span>© 2016-2026 Flikover.com</span>
-                <span class="dot-sep">·</span>
-                <a href="#">Terms</a>
-                <span class="dot-sep">·</span>
-                <a href="#">Privacy</a>
-                <span class="dot-sep">·</span>
-                <a href="#">Disclaimer</a>
-                <span class="dot-sep">·</span>
-                <a href="#">Contact</a>
-            </div>
-        </div>
-        
-    </div>
+              <!-- === PAYMENT LOGOS S === -->
+              <div class="footer-payment-logos">
+                  <img src="assets/images/paytm_logo.svg.png" alt="Paytm" class="payment-logo">
+                  <img src="assets/images/path3789 (1).png" alt="Visa" class="payment-logo">
+                  <img src="assets/images/Group (2).png" alt="Mastercard" class="payment-logo">
+                  <img src="assets/images/1280px-UPI-Logo-vector.svg 1 (1).png" alt="UPI" class="payment-logo">
+              </div>
+              <!-- === PAYMENT LOGOS E === -->
+          </div>
+      </div>
   </div>
+  <!-- === FOOTER BOTTOM BAR E === -->
 </footer>
 
 <style>
-    .footer-new-layout {
+    /* === FOOTER STYLES S === */
+    .site-footer-2 {
+        padding: 0;
+        margin: 0;
+        background-color: #000;
+    }
+
+    .footer-bottom-bar {
+        background-color: #363636;
+        color: #ffffff;
+        padding: 15px 0;
+        width: 100%;
+        margin: 0;
+    }
+
+    .bottom-bar-content {
         display: flex;
         justify-content: space-between;
-        align-items: flex-start; /* Top align columns */
-        padding: 20px 0;
+        align-items: center;
+        width: 100%;
     }
 
-    .footer-part-1, .footer-part-2 {
-        display: flex;
-        flex-direction: column;
-        gap: 20px; /* Space between rows inside parts */
-    }
-
-    .footer-part-2 {
-        align-items: flex-end; /* Right align content */
-    }
-
-    /* Keep existing styles active inside usage */
-    .footer-contact, .footer-support {
+    .footer-copyright-links {
         display: flex;
         align-items: center;
-        gap: 10px;
+        flex-wrap: wrap;
+        font-size: 13px;
+        color: #ffffff;
     }
-    
-    .footer-payment {
+
+    .footer-copyright-links a {
+        color: #ffffff;
+        text-decoration: none;
+        transition: color 0.2s;
+    }
+
+    .footer-copyright-links a:hover {
+        color: #ffffff;
+    }
+
+    .footer-payment-logos {
         display: flex;
+        align-items: center;
         gap: 15px;
-        align-items: center;
-    }
-    
-    .footer-copyright {
-        display: flex;
-        gap: 5px;
-        align-items: center;
-        font-size: 14px; /* Ensure readability */
     }
 
-    /* Mobile Responsiveness */
+    .payment-logo {
+        height: 20px; 
+        width: auto;
+        filter: grayscale(100%) brightness(200%); 
+        opacity:unset;
+    }
+
+    .dot-sep {
+        margin: 0 5px;
+        color: #ffffff;
+    }
+
     @media (max-width: 768px) {
-        .footer-new-layout {
-            flex-direction: column;
-            align-items: center; /* Center main layout */
-            gap: 30px;
-        }
-        
-        .footer-part-1, .footer-part-2 {
-            width: 100%;
-            align-items: center; /* Center children */
-        }
-        
-        .footer-contact, .footer-support {
-            justify-content: center; /* Center detailed rows */
-            width: 100%;
-        }
-        
-        .footer-payment {
-            justify-content: center;
-            width: 100%;
-            flex-wrap: wrap; 
-        }
-        
-        .footer-copyright {
-            justify-content: center;
-            width: 100%;
-            flex-wrap: wrap;
+        .bottom-bar-content {
+            flex-direction: column-reverse; 
+            gap: 20px;
+            align-items: center;
             text-align: center;
         }
+        
+        .footer-copyright-links {
+            justify-content: center;
+        }
     }
+    /* === FOOTER STYLES E === */
 </style>
- <!-- Row 2: Support & Copyright E -->
 
-<!-- Mobile Menu Script -->
+<!-- === MOBILE MENU SCRIPT S === -->
 <script>
 document.addEventListener('DOMContentLoaded', function() {
+  /* === DRAWER FUNCTIONALITY S === */
   const mobileToggle = document.querySelector('.mobile-toggle');
-  const headerNav = document.querySelector('.header-nav');
+  const headerNav = document.querySelector('.site-header-2 .header-nav');
 
   if (mobileToggle && headerNav) {
     const closeDrawer = () => {
@@ -132,19 +119,36 @@ document.addEventListener('DOMContentLoaded', function() {
       document.body.style.overflow = 'auto';
     };
 
-    mobileToggle.addEventListener('click', function() {
+    mobileToggle.addEventListener('click', function(e) {
+      e.stopPropagation();
       this.classList.toggle('active');
       headerNav.classList.toggle('active');
       document.body.style.overflow = headerNav.classList.contains('active') ? 'hidden' : 'auto';
     });
 
-    // Listen to the dedicated close button
     const drawerClose = document.querySelector('.drawer-close');
     if (drawerClose) {
-      drawerClose.addEventListener('click', closeDrawer);
+      drawerClose.addEventListener('click', function(e) {
+        e.stopPropagation();
+        closeDrawer();
+      });
     }
+
+    document.addEventListener('click', function(e) {
+      if (headerNav.classList.contains('active')) {
+        if (!headerNav.contains(e.target) && !mobileToggle.contains(e.target)) {
+          closeDrawer();
+        }
+      }
+    });
+
+    headerNav.addEventListener('click', function(e) {
+        e.stopPropagation();
+    });
   }
+  /* === DRAWER FUNCTIONALITY E === */
 });
 </script>
+<!-- === MOBILE MENU SCRIPT E === -->
 </body>
 </html>

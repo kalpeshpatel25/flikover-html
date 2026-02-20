@@ -1,7 +1,6 @@
-/* =========================================
-   CONTAINER SYSTEM
-========================================= */
+/* ====LAYOUT STYLES S ==== */
 
+/* === CONTAINER SYSTEM S=== */
 .container {
     width: 100%;
     padding-right: var(--container-padding-x);
@@ -22,20 +21,13 @@
     .container { max-width: 960px; }
 }
 
-/* Updated: 1200 breakpoint now gives 1180px */
 @media (min-width: 1200px) {
     .container { max-width: 1180px; }
 }
 
-/* New: 1366 breakpoint gives 1280px */
 @media (min-width: 1366px) {
     .container { max-width: 1280px; }
 }
-
-
-/* =========================================
-   FULL WIDTH CONTAINER
-========================================= */
 
 .container-fluid {
     width: 100%;
@@ -44,24 +36,18 @@
     margin-right: auto;
     margin-left: auto;
 }
+/* === CONTAINER SYSTEM E=== */
 
-
-/* =========================================
-   ROW SYSTEM
-========================================= */
-
+/* === ROW SYSTEM S=== */
 .row {
     display: flex;
     flex-wrap: wrap;
     margin-right: calc(-1 * var(--container-padding-x));
     margin-left: calc(-1 * var(--container-padding-x));
 }
+/* === ROW SYSTEM E=== */
 
-
-/* =========================================
-   COLUMN BASE
-========================================= */
-
+/* === COLUMN SYSTEM S=== */
 .col,
 [class*="col-"] {
     position: relative;
@@ -75,11 +61,6 @@
     max-width: 100%;
 }
 
-
-/* =========================================
-   12 COLUMN GRID (BASE / MOBILE)
-========================================= */
-
 .col-1  { flex: 0 0 8.333333%;  max-width: 8.333333%; }
 .col-2  { flex: 0 0 16.666667%; max-width: 16.666667%; }
 .col-3  { flex: 0 0 25%;        max-width: 25%; }
@@ -92,11 +73,6 @@
 .col-10 { flex: 0 0 83.333333%; max-width: 83.333333%; }
 .col-11 { flex: 0 0 91.666667%; max-width: 91.666667%; }
 .col-12 { flex: 0 0 100%;       max-width: 100%; }
-
-
-/* =========================================
-   RESPONSIVE GRID
-========================================= */
 
 @media (min-width: 576px) {
     .col-sm-1  { flex: 0 0 8.333333%;  max-width: 8.333333%; }
@@ -157,9 +133,9 @@
     .col-xl-11 { flex: 0 0 91.666667%; max-width: 91.666667%; }
     .col-xl-12 { flex: 0 0 100%;       max-width: 100%; }
 }
+/* === COLUMN SYSTEM E=== */
 
-
-/* ==== HEADER SECTION S ==== */
+/* === HEADER 1 (MAIN) S=== */
 .site-header {
   padding-top: 15px;
   padding-bottom: 15px;
@@ -227,25 +203,19 @@
   height: auto;
   filter: grayscale(100%); 
   opacity: 0.6;
-  transition: all 0.2s ease;
-}
-
-.payment-logo:hover {
-  filter: grayscale(0%);
-  opacity: 1;
-  transform: translateY(-1px);
+  transition: none;
 }
 /* ==== FOOTER SECTION E ==== */
 
-/* ==== HEADER 2 (DASHBOARD) S ==== */
+/* === HEADER 2 (DASHBOARD) S=== */
 .site-header-2 {
   background-color: #fff;
-  border-top: 3px solid #1a73e8; /* Blue strip from image */
+  border-top: 3px solid;
   border-bottom: 1px solid #EAEAEA;
   padding: 16px 24px; 
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, .10), 0 2px 4px -1px rgba(0, 0, 0, 0.03); 
   position: relative;
-  z-index: 10;
+  z-index: 1000;
 }
 
 .site-header-2 .header-content {
@@ -310,7 +280,10 @@
   color: #DD2F10; 
 }
 
-/* Mobile Toggle Buttons */
+.drawer-close {
+    display: none;
+}
+
 .mobile-toggle {
   display: none;
   flex-direction: column;
@@ -324,6 +297,10 @@
   z-index: 100;
 }
 
+.hidden-toggle {
+  display: none !important;
+}
+
 .mobile-toggle span {
   width: 100%;
   height: 2px;
@@ -332,7 +309,6 @@
   transition: all 0.3s ease;
 }
 
-/* Red Hide Logout on Desktop */
 .nav-logout-mobile {
   display: none !important;
 }
@@ -370,7 +346,7 @@
   }
 
   .site-header-2 .header-nav.active {
-    transform: translateX(0); /* Slide in */
+    transform: translateX(0); 
   }
 
   .site-header-2 .nav-link {
@@ -384,6 +360,11 @@
     text-align: center;
   }
 
+  .site-header-2 .nav-link.active {
+    background-color: transparent;
+    color: #3279B7;
+  }
+
   .nav-logout-mobile {
     display: block !important;
     width: 100%;
@@ -395,7 +376,6 @@
     text-align: center;
   }
 
-  /* Mobile Toggle Buttons */
   .mobile-toggle {
     display: flex;
     flex-direction: column;
@@ -418,7 +398,6 @@
     transition: all 0.3s ease;
   }
 
-  /* New Dedicated Drawer Close */
   .drawer-close {
     display: block;
     background: none;
@@ -435,7 +414,7 @@
   }
 
   .mobile-toggle.active {
-    display: none; /* Hide toggle when drawer is open */
+    display: none; 
   }
 
   .mobile-toggle span {
@@ -443,7 +422,18 @@
     height: 2px;
   }
 
+  .mobile-toggle.active span,
+  .hidden-toggle:checked ~ .mobile-toggle span {
+    display: none;
+  }
   .mobile-toggle.active span {
+    display: none;
+  }
+  
+  .hidden-toggle:checked ~ .header-nav {
+    transform: translateX(0);
+  }
+  .hidden-toggle:checked ~ .mobile-toggle {
     display: none;
   }
 }

@@ -1,0 +1,212 @@
+/* ====COMBO MINI PAGE STYLES S ==== */
+
+/* === MAIN LAYOUT SECTION S=== */
+body {
+    background-color: #f4f6f8;
+}
+
+.combo-mini-container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-family: var(--font-primary, 'DM Sans', sans-serif);
+}
+
+.content-box {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 40px 30px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    border: 1px solid #eaeaea;
+}
+
+.inner-box {
+    /* border: 1px solid #ddd; */
+    border-radius: 16px;
+    /* padding: 50px 20px 30px 20px; */
+    margin-top: 70px;
+    background-color: #fff;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.01);
+}
+/* === MAIN LAYOUT SECTION E=== */
+
+/* === HEADER SECTION S=== */
+.combo-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.combo-title {
+    color: #D69400;
+    font-size: 32px;
+    font-weight: 700;
+    text-decoration: underline;
+    margin-bottom: 15px;
+}
+
+.combo-subtitle {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.combo-question {
+    font-size: 24px;
+    font-weight: 700;
+    color: #000;
+}
+/* === HEADER SECTION E=== */
+
+/* === PRICING GRID SECTION S=== */
+.pricing-deck {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 4px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+/* === PRICING GRID SECTION E=== */
+
+/* === PRICING CARD SECTION S=== */
+.pricing-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); 
+    flex: 1;
+    text-align: center;
+    transition: transform 0.3s ease;
+    border: 1px solid #f0f0f0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.pricing-card.popular {
+    /* transform: scale(1.15); */
+    z-index: 10;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    border-color: transparent;
+    transform-origin: bottom;
+    margin-top: -30px;
+}
+
+.save-header {
+    background-color: #D69400;
+    color: #fff;
+    padding: 12px 0;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 12px 12px 0 0;
+}
+
+.pricing-card.popular .save-header {
+    padding: 15px 0; 
+    font-size: 16px;
+}
+
+.card-body {
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.plan-name {
+    font-size: 28px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.plan-price {
+    font-size: 15px;
+    color: #D69400;
+    font-weight: 700;
+}
+/* === PRICING CARD SECTION E=== */
+
+/* === BADGE & ACTIONS SECTION S=== */
+.btn-visit {
+    display: inline-block;
+    background-color: #3279B7;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 15px;
+    transition: background 0.2s;
+}
+
+.btn-visit:hover {
+    background-color: #265a8a;
+}
+
+.plan-price {
+    font-size: 15px;
+    color: #D69400;
+    font-weight: 700;
+}
+
+.popular-badge-wrap {
+    position: absolute;
+    top: -25px;
+    right: -15px;
+    z-index: 20;
+    filter: drop-shadow(0 4px 6px rgba(0,0,0,0.2));
+}
+
+.badge-icon {
+    width: 60px;
+    height: auto;
+    display: block;
+}
+/* === BADGE & ACTIONS SECTION E=== */
+
+/* === LINK SECTION S=== */
+.bottom-link-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+.link-12-month {
+    color: #000;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.link-12-month:hover {
+    text-decoration: underline;
+}
+/* === LINK SECTION E=== */
+
+/* === RESPONSIVE SECTION S=== */
+@media (max-width: 991px) {
+    .pricing-deck {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .pricing-card {
+        width: 100%;
+        max-width: 320px;
+    }
+    
+    .pricing-card.popular {
+        transform: scale(1.05);
+    }
+    
+    .content-box {
+        padding: 20px;
+    }
+}
+/* === RESPONSIVE SECTION E=== */

@@ -1,0 +1,207 @@
+/* ====SIGNUP PAGE STYLES S ==== */
+
+/* === MAIN LAYOUT SECTION S=== */
+body {
+    background-color: #f3f3f3;
+    font-family: 'DM Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.site-header-2 {
+    display: none;
+}
+
+.signup-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+/* === MAIN LAYOUT SECTION E=== */
+
+/* === FORM SECTION S=== */
+.signup-form-container {
+    width: 100%;
+    max-width: 720px;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signup-title,
+.signup-form {
+    width: 100%;
+    max-width: 350px;
+}
+
+.signup-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.form-row .form-group {
+    flex: 1;
+    margin-bottom: 0;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #6d6d6d;
+}
+
+.help-text {
+    font-size: 13px;
+    color: #333;
+    margin-bottom: 15px;
+    margin-top: -10px;
+    display: block;
+}
+
+
+.captcha-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.captcha-image {
+    background-color: #eee;
+    padding: 5px 15px;
+    font-family: 'Courier New', monospace;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #555;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="40" viewBox="0 0 100 40"><text x="10" y="30" font-family="serif" font-size="24" fill="gray" transform="rotate(-5 50 20)">355591</text><path d="M0 0 L100 40 M0 40 L100 0" stroke="lightgray" stroke-width="1"/></svg>'); 
+    background-size: cover;
+    border: 1px solid #ddd;
+    user-select: none;
+    height: 50px;
+    width: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.captcha-refresh {
+    color: #007bff;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.captcha-refresh:hover {
+    color: #0056b3;
+}
+
+.btn-signup {
+    width: 100%;
+    background-color: #337ab7;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.btn-signup:hover {
+    background-color: #286090;
+}
+/* === FORM SECTION E=== */
+
+/* === FOOTER SECTION S=== */
+.signup-footer-divider {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 40px 0 20px;
+    width: 100%;
+}
+
+.signup-footer-links {
+    text-align: center;
+    font-size: 13px;
+    color: #666;
+    width: 100%;
+}
+
+.signup-footer-links a {
+    color: #337ab7;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.signup-footer-links a:hover {
+    text-decoration: underline;
+}
+/* === FOOTER SECTION E=== */
+
+/* === RESPONSIVE SECTION S=== */
+@media (max-width: 400px) {
+    .form-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+@media (max-width: 768px) {
+    .signup-form-container {
+        padding: 20px;
+        box-shadow: none;
+        border: 1px solid #eee;
+    }
+
+    .signup-title {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .captcha-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .captcha-refresh {
+        align-self: flex-start;
+        margin-left: 10px;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .signup-footer-links {
+        font-size: 12px;
+    }
+}
+/* === RESPONSIVE SECTION E=== */

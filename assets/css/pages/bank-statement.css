@@ -1,0 +1,299 @@
+/* ====BANK STATEMENT PAGE STYLES S */
+
+/* === MAIN LAYOUT SECTION  S=== */
+.bank-statement-wrapper {
+    background-color: #f3f3f3;
+    background-image: url('../../images/bg_image1.png');
+    background-size: cover;
+    background-position: center;
+    font-family: 'DM Sans', sans-serif;
+    padding: 60px 20px;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+}
+
+.bank-statement-container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    position: relative;
+    border-top: 5px solid #fff; 
+}
+
+/* === HEADER SECTION S=== */
+.statement-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+}
+
+.statement-title {
+    font-size: 28px;
+    font-weight: 400;
+    color: #333;
+    margin: 0;
+}
+
+.btn-download-invoice {
+    background-color: #337ab7;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 400;
+    transition: background 0.3s;
+}
+
+.btn-download-invoice:hover {
+    background-color: #286090;
+}
+/* === HEADER SECTION E=== */
+
+/* === TABLE SECTION S=== */
+.statement-table-wrapper {
+    overflow-x: auto;
+}
+
+.statement-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    color: #555;
+}
+
+.statement-table thead tr {
+    background-color: #f9f9f9;
+    border-bottom: 2px solid #ddd;
+    border-top: 1px solid #ddd;
+}
+
+.statement-table th {
+    text-align: left;
+    padding: 12px;
+    font-weight: 700;
+    color: #333;
+    white-space: nowrap;
+}
+
+.statement-table td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    vertical-align: middle;
+}
+
+
+.statement-table tbody tr.row-highlight {
+    background-color: #d9edf7;
+    color: #31708f;
+}
+
+.statement-table tbody tr.row-highlight td {
+    border-top: 1px solid #afd9ee;
+    border-bottom: 1px solid #afd9ee;
+}
+/* === TABLE SECTION E=== */
+
+/* === RESPONSIVE SECTION S=== */
+@media (max-width: 768px) {
+    .bank-statement-wrapper {
+        padding: 40px 15px;
+    }
+    .bank-statement-container {
+        padding: 20px;
+    }
+
+    .statement-header {
+        flex-direction: row; 
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    }
+    .statement-title {
+        font-size: 20px; 
+    }
+    .btn-download-invoice {
+        width: auto;
+        padding: 6px 12px; 
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .bank-statement-wrapper {
+        padding: 40px 20px;
+    }
+    .bank-statement-container {
+        padding: 15px;
+    }
+    .statement-header {
+        margin-bottom: 20px;
+        flex-wrap: nowrap; 
+    }
+    .statement-title {
+        font-size: 16px; 
+    }
+    .btn-download-invoice {
+        padding: 5px 10px;
+        font-size: 12px;
+        white-space: nowrap;
+    }
+    .statement-table th, 
+    .statement-table td {
+        padding: 8px; 
+        font-size: 13px;
+        white-space: nowrap;
+    }
+    
+    .invoice-modal-container {
+        margin: 10px;
+        max-width: 95%;
+        border-radius: 8px;
+    }
+    .invoice-modal-header {
+        padding: 12px 15px;
+    }
+    .invoice-modal-title {
+        font-size: 16px;
+    }
+    .invoice-table th,
+    .invoice-table td {
+        padding: 8px;
+        font-size: 13px;
+    }
+}
+/* === RESPONSIVE SECTION E=== */
+
+/* === MODAL SECTION S=== */
+.invoice-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: none; 
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.invoice-modal-overlay.active {
+    display: flex;
+}
+
+.invoice-modal-container {
+    background-color: #fff;
+    width: 100%;
+    max-width: 900px;   
+    border-radius: 6px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    overflow: hidden;
+    margin: 20px;
+}
+
+.invoice-modal-header {
+    padding: 15px 20px;
+    border-bottom: 1px solid #e5e5e5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.invoice-modal-title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+
+.invoice-modal-close {
+    background: none;
+    border: none;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    opacity: 0.2;
+    cursor: pointer;
+}
+
+.invoice-modal-close:hover {
+    opacity: 0.5;
+}
+
+.invoice-modal-body {
+    padding: 20px;
+    overflow-x: auto;
+}
+
+.invoice-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.invoice-table th {
+    text-align: left;
+    padding: 10px;
+    border-bottom: 2px solid #ddd;
+    font-weight: 700;
+    color: #333;
+}
+
+.invoice-table td {
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    vertical-align: middle;
+    color: #333;
+}
+
+.invoice-table tbody tr.row-blue {
+    background-color: #d9edf7;
+    color: #31708f;
+}
+
+.btn-download-action {
+    background-color: #337ab7;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    font-size: 12px;
+    border-radius: 3px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.btn-download-action:hover {
+    background-color: #286090;
+}
+
+.invoice-modal-footer {
+    padding: 15px 20px;
+    border-top: 1px solid #e5e5e5;
+    text-align: right;
+}
+
+.btn-modal-close {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    color: #333;
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-modal-close:hover {
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}

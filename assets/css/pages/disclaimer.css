@@ -1,0 +1,101 @@
+/* ====DISCLAIMER PAGE STYLES S ==== */
+
+/* === MAIN LAYOUT SECTION S=== */
+.disclaimer-page-wrapper {
+    background-color: #f3f3f3;
+    background-image: url('../../images/bg_image1.png');
+    background-size: cover;
+    background-position: center;
+    font-family: 'DM Sans', sans-serif;
+    color: #333;
+    padding: 40px 20px;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+}
+
+.disclaimer-container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+/* === MAIN LAYOUT SECTION E=== */
+
+/* === CONTENT SECTION S=== */
+.disclaimer-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #000;
+}
+
+.disclaimer-section {
+    margin-bottom: 20px;
+}
+
+.disclaimer-label {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: block;
+    color: #000;
+}
+
+.disclaimer-text {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 15px;
+}
+/* === CONTENT SECTION E=== */
+
+/* === FOOTER SECTION S=== */
+.disclaimer-footer-divider {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 40px 0 20px;
+}
+
+.disclaimer-footer-links {
+    text-align: center;
+    font-size: 13px;
+    color: #666;
+}
+
+.disclaimer-footer-links a {
+    color: #666;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.disclaimer-footer-links a:hover {
+    text-decoration: underline;
+    color: #3b5998;
+}
+/* === FOOTER SECTION E=== */
+
+/* === RESPONSIVE SECTION S=== */
+@media (max-width: 768px) {
+    .disclaimer-page-wrapper {
+        padding: 40px 20px;
+    }
+    
+    .disclaimer-container {
+        padding: 30px 20px;
+    }
+    
+    .disclaimer-title {
+        font-size: 24px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    .disclaimer-text {
+        font-size: 14px;
+    }
+}
+/* === RESPONSIVE SECTION E=== */
