@@ -32,10 +32,7 @@ include('includes/header.php');
             <p class="disclaimer-text">This site disclaimer was last updated on May 20, 2016. Should we update, amend or make any changes to this document, those changes will be prominently posted here.</p>
         </div>
         <!-- === CONTENT SECTION E === -->
-        
-        <!-- === FOOTER SECTION S === -->
-        <?php include('includes/footer3.php'); ?>
-        <!-- === FOOTER SECTION E === -->
     </div>
 </div>
 <!-- === MAIN LAYOUT SECTION E === -->
+<?php include 'includes/footer2.php'; ?>

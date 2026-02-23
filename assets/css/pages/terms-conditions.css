@@ -6,22 +6,20 @@
     background-image: url('../../images/bg_image1.png');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     font-family: 'DM Sans', sans-serif;
     color: #333;
-    padding: 40px 20px;
-    min-height: 80vh;
-    display: flex;
-    justify-content: center;
+    padding: 20px 20px;
 }
 
 .terms-container {
-    max-width: 1200px;
+    max-width: 1160px;
     width: 100%;
     margin: 0 auto;
     background-color: #ffffff;
     padding: 50px;
     border-radius: 20px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
 }
 /* === MAIN LAYOUT SECTION E=== */
 
@@ -86,11 +84,7 @@
 /* === FOOTER SECTION E=== */
 
 /* === RESPONSIVE SECTION S=== */
-@media (max-width: 768px) {
-    .terms-page-wrapper {
-        padding: 40px 20px;
-    }
-    
+@media (max-width: 768px) {    
     .terms-container {
         padding: 30px 20px;
     }

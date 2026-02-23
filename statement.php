@@ -5,7 +5,7 @@ include 'includes/header.php';
 ?>
 
 <!-- === MAIN LAYOUT SECTION S === -->
-<main class="statement-container">
+<div class="statement-container">
     <div class="statement-card">
         <!-- === TOP BANNER SECTION S === -->
         <div class="top-banner">
@@ -201,7 +201,7 @@ include 'includes/header.php';
         </div>
         <!-- === SAVE BANNER SECTION E === -->
     </div>
-</main>
+</div>
 <!-- === MAIN LAYOUT SECTION E === -->
 
 <?php include 'includes/footer2.php'; ?>

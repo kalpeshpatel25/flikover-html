@@ -79,7 +79,7 @@ include('includes/header.php');
             <div id="tab-details" class="tab-content" style="display:none;">
                 <form action="" method="POST" class="change-details-grid">
                     <!-- Section 1 Header -->
-                    <div class="section-title">Change Phone Number and Email</div>
+                    <!-- <div class="section-title">Change Phone Number and Email</div> -->
 
                     <!-- Row 1: Phone & Email -->
                     <div class="form-group span-2">
@@ -101,7 +101,7 @@ include('includes/header.php');
             <div id="tab-address" class="tab-content" style="display:none;">
                 <form action="" method="POST" class="change-details-grid">
                     <!-- Section Header -->
-                    <div class="section-title">Change Address</div>
+                    <!-- <div class="section-title">Change Address</div> -->
 
                     <!-- Row 1: Company & Address -->
                     <div class="form-group span-2">

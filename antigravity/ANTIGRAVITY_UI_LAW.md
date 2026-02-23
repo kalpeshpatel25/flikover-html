@@ -95,14 +95,14 @@ Rules:
 ---
 
 #### Tertiary Button
-- Surface: #3279B7
-- Border: #3279B7
+- Surface: #337ab7
+- Border: #337ab7
 - Text: #FFFFFF
 
 #### Tertiary Outline Button
 - Surface: #FFFFFF
-- Border: #3279B7
-- Text: #3279B7
+- Border: #337ab7
+- Text: #337ab7
 
 ---
 

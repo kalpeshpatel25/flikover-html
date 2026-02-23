@@ -24,20 +24,37 @@ $base_url = '/flikover-html';
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <!-- === FONTS E === -->
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
   <!-- === SLICK SLIDER S === -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"> -->
   <!-- === SLICK SLIDER E === -->
 
   <!-- === CSS STYLESHEETS S === -->
   <link rel="stylesheet" href="<?= $base_url ?>/assets/css/tokens.css">
   <link rel="stylesheet" href="<?= $base_url ?>/assets/css/layout.css?v=<?= time() ?>">
   <link rel="stylesheet" href="<?= $base_url ?>/assets/css/global.css">
-  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/background.css">
   <?php if ($page_css): ?>
     <link rel="stylesheet" href="<?= $base_url ?>/assets/css/pages/<?= htmlspecialchars($page_css); ?>?v=<?= time() ?>">
   <?php endif; ?>
   <!-- === CSS STYLESHEETS E === -->
+
+  <style>
+    main {
+      padding-top: 78.8438px;
+    }
+    @media (max-width: 768px) {
+      main {
+        padding-top: 70.8438px;
+      }
+    }
+    @media (max-width: 480px) { 
+      main {
+        padding-top: 62.3281px;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -66,7 +83,7 @@ $base_url = '/flikover-html';
       <a href="combomini.php" class="nav-link" id="header-access-btn">Access</a>
       <a href="tool-access.php" class="nav-link <?= $current_page == 'tool-access.php' ? 'active' : '' ?>">Tool</a>
       <a href="statement.php" class="nav-link <?= $current_page == 'statement.php' ? 'active' : '' ?>">Statement</a>
-      <a href="bank-statement.php" class="nav-link <?= $current_page == 'bank-statement.php' ? 'active' : '' ?>">Bank Statement</a>
+      <a href="reports.php" class="nav-link <?= $current_page == 'reports.php' ? 'active' : '' ?>">Reports</a>
       <a href="profile.php" class="nav-link <?= $current_page == 'profile.php' ? 'active' : '' ?>">Edit Profile</a>
       <a href="contactus.php" class="nav-link <?= $current_page == 'contactus.php' ? 'active' : '' ?>">Contact Us</a>
       <a href="logout.php" class="nav-link <?= $current_page == 'logout.php' ? 'active' : '' ?>">Logout</a>

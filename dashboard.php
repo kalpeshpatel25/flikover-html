@@ -80,7 +80,7 @@ include('includes/header.php');
 
     <!-- === SINGLE PRODUCT PLANS SECTION S === -->
     <div class="content-box rounded-top">
-        <h3 class="single-plans-title">Single Product Plans</h3>
+        <!-- <h3 class="single-plans-title">Single Product Plans</h3> -->
         
         <div class="single-plans-grid">
             <?php 
@@ -115,8 +115,8 @@ include('includes/header.php');
                             <span><?= $tool['name'] ?></span>
                         <?php endif; ?>
                     </div>
-                    <div class="single-plan-price">₹ 1200/m</div>
                     <a href="#" class="single-plan-btn">Access</a>
+                    <div class="single-plan-price">₹ 1200/m</div>
                 </div>
             <?php endforeach; ?>
         </div>

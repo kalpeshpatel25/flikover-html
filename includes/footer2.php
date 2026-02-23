@@ -32,81 +32,23 @@
   <!-- === FOOTER BOTTOM BAR E === -->
 </footer>
 
-<style>
-    /* === FOOTER STYLES S === */
-    .site-footer-2 {
-        padding: 0;
-        margin: 0;
-        background-color: #000;
-    }
-
-    .footer-bottom-bar {
-        background-color: #363636;
-        color: #ffffff;
-        padding: 15px 0;
-        width: 100%;
-        margin: 0;
-    }
-
-    .bottom-bar-content {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-    }
-
-    .footer-copyright-links {
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        font-size: 13px;
-        color: #ffffff;
-    }
-
-    .footer-copyright-links a {
-        color: #ffffff;
-        text-decoration: none;
-        transition: color 0.2s;
-    }
-
-    .footer-copyright-links a:hover {
-        color: #ffffff;
-    }
-
-    .footer-payment-logos {
-        display: flex;
-        align-items: center;
-        gap: 15px;
-    }
-
-    .payment-logo {
-        height: 20px; 
-        width: auto;
-        filter: grayscale(100%) brightness(200%); 
-        opacity:unset;
-    }
-
-    .dot-sep {
-        margin: 0 5px;
-        color: #ffffff;
-    }
-
-    @media (max-width: 768px) {
-        .bottom-bar-content {
-            flex-direction: column-reverse; 
-            gap: 20px;
-            align-items: center;
-            text-align: center;
-        }
-        
-        .footer-copyright-links {
-            justify-content: center;
-        }
-    }
-    /* === FOOTER STYLES E === */
-</style>
-
 <!-- === MOBILE MENU SCRIPT S === -->
+
+<script>
+  $(function(){
+    var headerHeight = $('.site-header-2').innerHeight();
+  
+    $('main').css('padding-top', headerHeight + 'px');
+  });
+  jQuery(window).scroll(function() {
+    if (jQuery(this).scrollTop() > 0){
+      jQuery('.site-header-2').addClass("sticky");
+    }
+    else{
+      jQuery('.site-header-2').removeClass("sticky");
+    }
+  });
+</script>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   /* === DRAWER FUNCTIONALITY S === */

@@ -1,6 +1,6 @@
 <?php
 $page_title = 'Flikover Sign Up';
-include('includes/header.php'); // Used solely for CSS imports
+include('includes/header1.php'); // Used solely for CSS imports
 ?>
 
 <link rel="stylesheet" href="assets/css/pages/signup.css">
@@ -53,15 +53,9 @@ include('includes/header.php'); // Used solely for CSS imports
             <button type="submit" class="btn-signup">Sign Up</button>
         </form>
         <!-- === SIGNUP FORM SECTION E === -->
-
-        <!-- === FOOTER SECTION S === -->
-        <?php include('includes/footer3.php'); ?>
-        <!-- === FOOTER SECTION E === -->
     </div>
     <!-- === SIGNUP FORM CONTAINER SECTION E === -->
 </div>
 <!-- === MAIN LAYOUT SECTION E === -->
 
-</main>
-</body>
-</html>
+<?php include 'includes/footer.php'; ?>

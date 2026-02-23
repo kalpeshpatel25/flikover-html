@@ -1,4 +1,4 @@
-/* ====BANK STATEMENT PAGE STYLES S */
+/* ====Reports PAGE STYLES S */
 
 /* === MAIN LAYOUT SECTION  S=== */
 .bank-statement-wrapper {
@@ -6,23 +6,21 @@
     background-image: url('../../images/bg_image1.png');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     font-family: 'DM Sans', sans-serif;
-    padding: 60px 20px;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
+    padding: 20px 20px;
 }
 
 .bank-statement-container {
-    max-width: 1200px;
+    max-width: 1160px;
     width: 100%;
     margin: 0 auto;
     background-color: #ffffff;
-    padding: 30px;
-    border-radius: 8px;
+    padding: 30px 20px;
+    border-radius: 20px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.05);
     position: relative;
-    border-top: 5px solid #fff; 
 }
 
 /* === HEADER SECTION S=== */
@@ -106,9 +104,6 @@
 
 /* === RESPONSIVE SECTION S=== */
 @media (max-width: 768px) {
-    .bank-statement-wrapper {
-        padding: 40px 15px;
-    }
     .bank-statement-container {
         padding: 20px;
     }
@@ -130,9 +125,6 @@
 }
 
 @media (max-width: 480px) {
-    .bank-statement-wrapper {
-        padding: 40px 20px;
-    }
     .bank-statement-container {
         padding: 15px;
     }

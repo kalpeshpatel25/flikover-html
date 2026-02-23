@@ -44,8 +44,7 @@ include('includes/header.php');
         <!-- === CONTENT SECTION E === -->
 
         <!-- === FOOTER SECTION S === -->
-        <?php include('includes/footer3.php'); ?>
-        <!-- === FOOTER SECTION E === -->
     </div>
 </div>
 <!-- === MAIN LAYOUT SECTION E === -->
+<?php include 'includes/footer2.php'; ?>

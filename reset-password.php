@@ -1,7 +1,7 @@
 <?php
 $page_title = 'Reset Password';
 $page_css = 'reset-password.css';
-include('includes/header.php'); // Used solely for CSS imports
+include('includes/header1.php'); // Used solely for CSS imports
 ?>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -17,7 +17,7 @@ include('includes/header.php'); // Used solely for CSS imports
         <!-- === FORM INPUTS SECTION S === -->
         <form action="" method="post" class="reset-form">
             <div class="form-group">
-                <label for="identifier">Mobile or Email</label>
+                <!-- <label for="identifier">Mobile or Email</label> -->
                 <input type="text" id="identifier" class="form-control" name="identifier" placeholder="Enter Mobile or Email" required>
             </div>
 
@@ -34,22 +34,17 @@ include('includes/header.php'); // Used solely for CSS imports
             <!-- === CAPTCHA SECTION E === -->
 
             <div class="form-group">
-                <label for="security_code">Security Code</label>
+                <!-- <label for="security_code">Security Code</label> -->
                 <input type="text" id="security_code" class="form-control" name="security_code" placeholder="Security Code" required>
             </div>
 
             <button type="submit" class="btn-reset">Reset</button>
         </form>
         <!-- === FORM INPUTS SECTION E === -->
-
-        <!-- === FOOTER SECTION S === -->
-        <?php include('includes/footer3.php'); ?>
-        <!-- === FOOTER SECTION E === -->
     </div>
     <!-- === RESET FORM SECTION E === -->
 </div>
 <!-- === MAIN LAYOUT SECTION E === -->
 
-</main>
-</body>
-</html>
+
+<?php include 'includes/footer.php'; ?>

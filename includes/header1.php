@@ -23,6 +23,10 @@ $base_url = '/flikover-html';
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <!-- === FONTS E === -->
 
+  <!-- === jquery S === -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <!-- === jquery E === -->
+
   <!-- === SLICK SLIDER S === -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
@@ -36,6 +40,22 @@ $base_url = '/flikover-html';
     <link rel="stylesheet" href="<?= $base_url ?>/assets/css/pages/<?= htmlspecialchars($page_css); ?>?v=<?= time() ?>">
   <?php endif; ?>
   <!-- === CSS STYLESHEETS E === -->
+
+  <style>
+    main {
+      padding-top: 98.5625px;
+    }
+    @media (max-width: 768px) {
+      main {
+        padding-top: 85.3594px;
+      }
+    }
+    @media (max-width: 480px) {
+      main {
+        padding-top: 58.3281px;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -45,16 +65,16 @@ $base_url = '/flikover-html';
   <div class="container">
     
     <!-- === LOGO S === -->
-    <a href="<?= $base_url ?>/home1.php" class="site-logo">
+    <a href="<?= $base_url ?>/home.php" class="site-logo">
       <img src="<?= $base_url ?>/assets/images/logo_new 1.png" alt="Flikover" width="161" style="height: auto; display: block;">
     </a>
     <!-- === LOGO E === -->
 
     <!-- === HEADER ACTIONS S === -->
     <div class="header-actions">
-      <a href="#" class="nav-link">Contact Us</a>
-      <a href="#" class="btn btn-outline">Log In</a>
-      <a href="#" class="btn btn-primary">Sign Up</a>
+      <a href="contactus.php" class="nav-link">Contact Us</a>
+      <a href="login.php" class="btn btn-outline">Log In</a>
+      <a href="signup.php" class="btn btn-primary">Sign Up</a>
     </div>
     <!-- === HEADER ACTIONS E === -->
     

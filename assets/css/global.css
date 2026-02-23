@@ -13,6 +13,11 @@
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-image: url('../images/bg_image1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
 
   main {
@@ -36,7 +41,7 @@
     margin-bottom: var(--section-spacing-y);
   }
 
-  .login-wrapper,
+  /* .login-wrapper,
   .signup-wrapper,
   .reset-wrapper,
   .contact-us-container,
@@ -48,7 +53,7 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-  }
+  } */
 /* global.css E */
 
 /* Btn S */
@@ -93,6 +98,10 @@
     border-color: var(--btn-tertiary-border);
     color: var(--btn-tertiary-text);
   }
+  .btn-tertiary:hover {
+    background: #286090;
+    border-color: #286090;
+  }
 
   /* Tertiary Outline */
   .btn-tertiary-outline {
@@ -121,6 +130,9 @@
 
   .renew-button:hover {
     background-color: #286090;
-    transform: translateY(-1px);
   }
 /* Btn E */
+
+.bg-dark {
+  background-color: #200B08 !important;
+}

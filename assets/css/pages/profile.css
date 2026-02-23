@@ -9,8 +9,8 @@ body {
 .profile-container {
     display: flex;
     width: 100%; 
-    max-width: 1280px;
-    margin: 40px auto 25px;
+    max-width: 1200px;
+    margin: 20px auto 20px;
     padding: 0 20px;
     padding-bottom: 14.5px;
     box-sizing: border-box;
@@ -42,7 +42,7 @@ body {
     height: 545.81px;
     background-color: #EAF5FF;
     border-radius: 10px;
-    padding: 40px 13.42px;
+    padding: 20px 13.42px;
     display: flex;
     flex-direction: column;
     display: flex;
@@ -77,7 +77,7 @@ body {
 }
 
 .sidebar-link.active {
-    background-color: #3279B7;
+    background-color: #337ab7;
     color: #ffffff;
     box-shadow: 0 2px 4px rgba(50, 121, 183, 0.25);
     font-weight: 500;
@@ -141,9 +141,9 @@ body {
 }
 
 .form-group input:focus {
-    border-color: #3279B7;
+    border-color: #337ab7;
     background-color: #FFFFFF;
-    box-shadow: 0 0 0 1px #3279B7;
+    box-shadow: 0 0 0 1px #337ab7;
 }
 
 .form-group input::placeholder {
@@ -205,7 +205,7 @@ body {
 /* === BUTTON SECTION S=== */
 .save-btn {
     grid-column: 1 / 2;
-    background-color: #3279B7;
+    background-color: #337ab7;
     color: #ffffff;
     border: none;
     height: 44px;
@@ -233,7 +233,7 @@ body {
     align-items: center;
     padding: 10px;
     height: 44px;
-    background-color: #3279B7;
+    background-color: #337ab7;
     color: #FFFFFF;
     border: none;
     border-radius: 31px;
@@ -306,7 +306,7 @@ body {
 }
 
 .submit-modal-btn {
-    background-color: #3279B7;
+    background-color: #337ab7;
     color: white;
     padding: 10px;
     border: none;
@@ -327,7 +327,7 @@ body {
 @media (max-width: 1300px) {
     .profile-container {
         width: 100%;
-        margin: 40px auto 20px; 
+        margin: 20px auto 20px; 
     }
     .profile-content {
         height: auto; 
@@ -395,7 +395,7 @@ body {
 @media (max-width: 600px) {
     .profile-container {
          width: 100%;
-         margin: 40px auto 20px;
+         margin: 20px auto 20px;
     }
 
     .sidebar-menu-group {

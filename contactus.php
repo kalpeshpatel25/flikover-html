@@ -106,8 +106,6 @@ include 'includes/header.php';
             </a>
         </div>
         <!-- === SUPPORT FOOTER E === -->
-        
-        <?php include('includes/footer3.php'); ?>
     </div>
     <!-- === COMMON ISSUES SECTION E === -->
 </div>
@@ -159,6 +157,4 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 
-</main>
-</body>
-</html>
+<?php include 'includes/footer2.php'; ?>

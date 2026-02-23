@@ -6,6 +6,8 @@
     background-image: url('../../images/bg_image1.png');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     font-family: 'DM Sans', sans-serif;
     display: flex;
     justify-content: center;
@@ -17,12 +19,10 @@
 .logout-container {
     background: #fff;
     width: 100%;
-    max-width: 800px;
+    max-width: 1160px;
     text-align: center;
     padding: 20px 20px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     border-radius: 20px;
-    margin: 20px;
 }
 
 .thank-you-image {
@@ -169,7 +169,6 @@
 
     .logout-container {
         padding: 30px 20px;
-        margin: 10px 0;
     }
 
     .logout-container h1 {

@@ -2,9 +2,6 @@
 
 /* === MAIN LAYOUT SECTION S=== */
 /* === MAIN LAYOUT SECTION S=== */
-.site-header-2 {
-    display: none;
-}
 
 .signup-wrapper {
     justify-content: center;
@@ -16,7 +13,7 @@
 /* === FORM SECTION S=== */
 .signup-form-container {
     width: 100%;
-    max-width: 720px;
+    max-width: 1140px;
     background-color: #ffffff;
     padding: 40px;
     border-radius: 8px;
@@ -90,9 +87,9 @@
 }
 
 .form-control:focus {
-    border-color: #3279B7;
+    border-color: #337ab7;
     background-color: #FFFFFF;
-    box-shadow: 0 0 0 1px #3279B7;
+    box-shadow: 0 0 0 1px #337ab7;
 }
 
 .help-text {
@@ -146,11 +143,14 @@
     background-color: #337ab7;
     color: #fff;
     border: none;
-    padding: 12px;
-    font-size: 16px;
-    border-radius: 4px;
+    height: 44px;
+    border-radius: 31px;
     cursor: pointer;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
     font-weight: 500;
+    margin-bottom: 10px;
+    transition: background-color 0.2s ease;
 }
 
 .btn-signup:hover {

@@ -18,6 +18,7 @@
   /* Brand */
   --color-primary: #000000;
   --color-secondary: #DD2F10;
+  --color-tertiary: #337ab7;
 
   /* Text */
   --color-heading: #000000;
@@ -40,13 +41,13 @@
   --btn-secondary-border: #DD2F10;
   --btn-secondary-text: #FFFFFF;
 
-  --btn-tertiary-bg: #3279B7;
-  --btn-tertiary-border: #3279B7;
+  --btn-tertiary-bg: #337ab7;
+  --btn-tertiary-border: #337ab7;
   --btn-tertiary-text: #FFFFFF;
 
   --btn-tertiary-outline-bg: #FFFFFF;
-  --btn-tertiary-outline-border: #3279B7;
-  --btn-tertiary-outline-text: #3279B7;
+  --btn-tertiary-outline-border: #337ab7;
+  --btn-tertiary-outline-text: #337ab7;
 
   /* LAYOUT SYSTEM */
   --container-max-width: 1180px;

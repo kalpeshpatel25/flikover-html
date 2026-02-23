@@ -3,7 +3,7 @@ $page_title = 'Account Statement';
 include('includes/header.php');
 ?>
 
-<link rel="stylesheet" href="assets/css/pages/bank-statement.css">
+<link rel="stylesheet" href="assets/css/pages/reports.css">
 
 <!-- === MAIN LAYOUT SECTION S === -->
 <div class="bank-statement-wrapper">

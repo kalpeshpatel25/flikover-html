@@ -6,8 +6,9 @@ body {
 }
 
 .statement-container {
-    max-width: 1100px;
-    margin: 40px auto;
+    max-width: 1200px;
+    width: 100%;
+    margin: 20px auto;
     padding: 0 20px;
 }
 
@@ -17,7 +18,7 @@ body {
     box-shadow: 0 1px 3px rgba(0,0,0,0.1);
     overflow: hidden;
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 0px;
 }
 /* === MAIN LAYOUT SECTION E=== */
 
@@ -150,7 +151,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #3279B7;
+    background-color: #337ab7;
     color: #ffffff;
     border: none;
     height: 44px;
@@ -194,7 +195,7 @@ body {
 
 .btn-contact {
     display: inline-block;
-    color: #3279B7;
+    color: #337ab7;
     background: transparent;
     border: none;
     font-family: 'DM Sans', sans-serif;
@@ -330,7 +331,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #3279B7;
+    background-color: #337ab7;
     color: #ffffff;
     border: none;
     font-family: 'DM Sans', sans-serif;

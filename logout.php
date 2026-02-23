@@ -49,10 +49,9 @@ $page_title = 'Logout';
         </div>
         <!-- === SUPPORT TEXT SECTION E === -->
 
-        <!-- === FOOTER SECTION S === -->
-        <?php include('includes/footer3.php'); ?>
-        <!-- === FOOTER SECTION E === -->
     </div>
     <!-- === CONTENT CONTAINER SECTION E === -->
 </div>
 <!-- === MAIN LAYOUT SECTION E === -->
+
+<?php include 'includes/footer2.php'; ?>

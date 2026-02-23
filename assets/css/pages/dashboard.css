@@ -5,15 +5,15 @@ body {
 
 .tool-access-container {
     max-width: 1200px;
-    margin: 40px auto;
-    padding: 0 20px 30px;
+    margin: 20px auto;
+    padding: 0 20px 0px;
 }
 
 .content-box {
     background-color: #ffffff;
     padding: 30px 20px 30px 20px;
     border-radius: 20px;
-    margin-bottom: 30px; 
+    margin-bottom: 20px; 
     
 }
 
@@ -250,7 +250,6 @@ body {
 
 .buy-now-btn:hover {
     background-color: #286090;
-    transform: translateY(-1px);
 }
 
 
@@ -279,35 +278,44 @@ body {
 .single-plans-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 30px; 
+    gap: 0px 30px; 
 }
 
 .single-plan-card {
     background-color: #fff;
-    border: 1px solid #EAEAEA;
+    border: 0px solid #EAEAEA;
     border-radius: 12px;
-    padding: 30px 15px; 
+    padding: 30px 15px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px; 
+    gap: 10px;
     text-align: center;
-    transition: all 0.3s ease; 
+    transition: all 0.3s ease;
+    position: relative;
+}
+.single-plan-card::before {
+    content: "";
+    position: absolute;
+    top: 40px;
+    right: -15px;
+    bottom: 40px;
+    border-right: 1px solid #EAEAEA;
 }
 
-.single-plan-card:hover {
+/* .single-plan-card:hover {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.06); 
     transform: translateY(-5px); 
     border-color: #e0e0e0; 
-}
+} */
 
 .single-plan-logo {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    aspect-ratio: 11/2; 
+    width: 80%;
+    aspect-ratio: 11/2;
     overflow: hidden;
     margin-bottom: 20px;
 }
@@ -319,28 +327,29 @@ body {
 }
 
 .single-plan-price {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 500;
     color: #333;
 }
 
 .single-plan-btn {
     display: inline-block;
-    width: 100%; 
+    width: 100%;
     max-width: 142px;
-    padding: 10px 20px; 
-    border: 1px solid #3b82f6;
-    color: #3b82f6;
+    padding: 10px 20px;
+    border: 1px solid #337ab7;
+    color: #fff;
+    background: #337ab7;
     border-radius: 20px;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 500;
-    box-sizing: border-box; 
+    box-sizing: border-box;
     transition: background 0.2s;
 }
 
 .single-plan-btn:hover {
-    background-color: #eff6ff;
+    background-color: #286090;
 }
 
 
@@ -356,8 +365,7 @@ body {
     .tool-access-container {
         padding-left: 0;
         padding-right: 0;
-        width: 90%; 
-        margin: 40px auto 20px;
+        width: calc(100% - 40px); 
     }
 
     .content-box {

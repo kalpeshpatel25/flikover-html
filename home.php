@@ -1,7 +1,7 @@
 <?php $page_css='home1.css'; include 'includes/header1.php'; ?>
 
 <!-- === MAIN LAYOUT SECTION S === -->
-<main class="page-content">
+<div class="page-content">
   <!-- === HERO SECTION S === -->
   <section class="hero-section">
       <div class="hero-grid-bg"></div>
@@ -10,7 +10,7 @@
           
           <div class="hero-content">
               <h1 class="hero-title">
-                  No. 1 Group Buy<br>Community In The<br>World
+                  No. 1 Group Buy <br>Community In The <br>World
               </h1>
               
               <p class="hero-description">
@@ -20,7 +20,7 @@
 
               <form action="#" class="hero-form">
                   <input type="email" placeholder="Enter your email" required />
-                  <button type="submit" class="btn btn-secondary">Try For Free</button>
+                  <button type="submit" class="btn btn-tertiary">Try For Free</button>
               </form>
 
               <div class="social-proof">
@@ -290,6 +290,6 @@
   });
   </script>
 
-</main>
+</div>
 <!-- === MAIN LAYOUT SECTION E === -->
 <?php include 'includes/footer.php'; ?>

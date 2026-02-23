@@ -55,10 +55,7 @@ include('includes/header.php');
             Should we update, amend or make any changes to our privacy policy, those changes will be posted here.</p>
         </div>
         <!-- === CONTENT SECTION E === -->
-        
-        <!-- === FOOTER SECTION S === -->
-        <?php include('includes/footer3.php'); ?>
-        <!-- === FOOTER SECTION E === -->
     </div>
 </div>
 <!-- === MAIN LAYOUT SECTION E === -->
+<?php include 'includes/footer2.php'; ?>

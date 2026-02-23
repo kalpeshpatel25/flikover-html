@@ -1,7 +1,7 @@
 <?php
 $page_title = 'Flikover Login';
 $page_css = 'login.css';
-include('includes/header.php');
+include('includes/header1.php');
 ?>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -17,12 +17,12 @@ include('includes/header.php');
         <!-- === FORM INPUTS SECTION S === -->
         <form action="" method="post">
             <div class="form-group">
-                <label for="email">Email Address</label>
-                <input type="email" class="form-control" id="email" placeholder="testtest@gmail.com" name="email">
+                <!-- <label for="email">Email Address</label> -->
+                <input type="email" class="form-control" id="email" placeholder="Email Address" name="email">
             </div>
 
             <div class="form-group">
-                <label for="passwordField">Password</label>
+                <!-- <label for="passwordField">Password</label> -->
                 <div class="password-input-wrapper">
                     <input type="password" class="form-control" placeholder="Password" name="password" id="passwordField">
                     <span class="password-toggle" onclick="togglePassword()">
@@ -46,10 +46,6 @@ include('includes/header.php');
         </div>
         <!-- === INFO TEXT SECTION E === -->
 
-        <!-- === FOOTER SECTION S === -->
-        <?php include('includes/footer3.php'); ?>
-        <!-- === FOOTER SECTION E === -->
-
     </div>
     <!-- === LOGIN FORM SECTION E === -->
 </div>
@@ -68,6 +64,4 @@ include('includes/header.php');
 </script>
 <!-- === PAGE SCRIPTS SECTION E === -->
 
-</main>
-</body>
-</html>
+<?php include 'includes/footer.php'; ?>
