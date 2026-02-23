@@ -1,3 +1,4 @@
+</main>
 <footer class="site-footer">
   <div class="container">
     
@@ -6,13 +7,13 @@
     <div class="footer-left">
       <span>&copy; 2016-2026 Flikover.com</span>
       <span class="separator">&middot;</span>
-      <a href="#">Terms</a>
+      <a href="terms-condition.php">Terms</a>
       <span class="separator">&middot;</span>
-      <a href="#">Privacy</a>
+      <a href="privacy-policy.php">Privacy</a>
       <span class="separator">&middot;</span>
-      <a href="#">Disclaimer</a>
+      <a href="disclaimer.php">Disclaimer</a>
       <span class="separator">&middot;</span>
-      <a href="#">Contact</a>
+      <a href="contactus.php">Contact</a>
     </div>
  <!-- ==== FOOTER LEFT: COPYRIGHT & LINKS E ==== -->
 

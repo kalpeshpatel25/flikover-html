@@ -1,10 +1,9 @@
 <?php
 $page_title = 'Reset Password';
+$page_css = 'reset-password.css';
 include('includes/header.php'); // Used solely for CSS imports
 ?>
 
-<link rel="stylesheet" href="assets/css/pages/reset-password.css">
-<!-- FontAwesome for refresh icon -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
 <!-- === MAIN LAYOUT SECTION S === -->
@@ -18,7 +17,8 @@ include('includes/header.php'); // Used solely for CSS imports
         <!-- === FORM INPUTS SECTION S === -->
         <form action="" method="post" class="reset-form">
             <div class="form-group">
-                <input type="text" class="form-control" name="identifier" placeholder="Enter Mobile or Email" required>
+                <label for="identifier">Mobile or Email</label>
+                <input type="text" id="identifier" class="form-control" name="identifier" placeholder="Enter Mobile or Email" required>
             </div>
 
             <!-- === CAPTCHA SECTION S === -->
@@ -34,7 +34,8 @@ include('includes/header.php'); // Used solely for CSS imports
             <!-- === CAPTCHA SECTION E === -->
 
             <div class="form-group">
-                <input type="text" class="form-control" name="security_code" placeholder="Security Code" required>
+                <label for="security_code">Security Code</label>
+                <input type="text" id="security_code" class="form-control" name="security_code" placeholder="Security Code" required>
             </div>
 
             <button type="submit" class="btn-reset">Reset</button>
@@ -42,18 +43,13 @@ include('includes/header.php'); // Used solely for CSS imports
         <!-- === FORM INPUTS SECTION E === -->
 
         <!-- === FOOTER SECTION S === -->
-        <hr class="reset-footer-divider">
-
-        <div class="reset-footer-links">
-            © 2016-2026 Flikover.com. · 
-            <a href="#">Contact</a>
-        </div>
+        <?php include('includes/footer3.php'); ?>
         <!-- === FOOTER SECTION E === -->
     </div>
     <!-- === RESET FORM SECTION E === -->
 </div>
 <!-- === MAIN LAYOUT SECTION E === -->
 
-<!-- No external footer needed -->
+</main>
 </body>
 </html>

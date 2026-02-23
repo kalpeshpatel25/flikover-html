@@ -201,9 +201,38 @@
 .payment-logo {
   width: 60px; 
   height: auto;
-  filter: grayscale(100%); 
-  opacity: 0.6;
-  transition: none;
+  filter: brightness(0) invert(1);
+  opacity: 0.9;
+  transition: opacity 0.2s ease;
+}
+
+.payment-logo:hover {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .site-footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .site-footer .container {
+    flex-direction: column-reverse;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .footer-left {
+    justify-content: center;
+    text-align: center;
+    line-height: 2;
+  }
+
+  .footer-right {
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 5px;
+  }
 }
 /* ==== FOOTER SECTION E ==== */
 
@@ -301,6 +330,21 @@
   display: none !important;
 }
 
+.nav-backdrop {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 998;
+}
+
+.hidden-toggle:checked ~ .nav-backdrop {
+  display: block;
+}
+
 .mobile-toggle span {
   width: 100%;
   height: 2px;
@@ -341,8 +385,9 @@
     transform: translateX(100%);
     transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: -10px 0 30px rgba(0,0,0,0.1);
-    z-index: 999;
+    z-index: 1001;
     display: flex;
+    overflow-y: auto;
   }
 
   .site-header-2 .header-nav.active {
@@ -590,3 +635,31 @@
 }
 /* ==== FOOTER 2 (DASHBOARD/ACCESS) E ==== */
 
+/* ==== FOOTER 3 (MINIMAL) S ==== */
+.footer3-divider {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 30px 0 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footer3-links {
+    text-align: center;
+    font-size: 13px;
+    color: #666;
+    width: 100%;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.footer3-links a {
+    color: #3279B7; 
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer3-links a:hover {
+    text-decoration: underline;
+    color: #286090;
+}
+/* ==== FOOTER 3 (MINIMAL) E ==== */

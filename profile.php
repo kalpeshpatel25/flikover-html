@@ -92,7 +92,7 @@ include('includes/header.php');
                     </div>
 
                     <!-- Submit Button -->
-                    <button type="submit" class="submit-btn span-2" style="grid-column: 1 / -1; width: 314px;">Submit</button>
+                    <button type="submit" class="submit-btn span-2">Submit</button>
                 </form>
             </div>
             <!-- === TAB 3: CHANGE DETAILS SECTION E === -->
@@ -133,7 +133,7 @@ include('includes/header.php');
                     </div>
 
                     <!-- Submit Button -->
-                    <button type="submit" class="submit-btn span-2" style="grid-column: 1 / -1; width: 314px;">Submit</button>
+                    <button type="submit" class="submit-btn span-2">Submit</button>
                 </form>
             </div>
             <!-- === TAB 4: CHANGE ADDRESS SECTION E === -->

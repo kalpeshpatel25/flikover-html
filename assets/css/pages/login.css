@@ -1,22 +1,12 @@
 /* ====LOGIN PAGE STYLES S ==== */
 
 /* === MAIN LAYOUT SECTION S=== */
-body {
-    background-color: #f3f3f3;
-    font-family: 'DM Sans', sans-serif;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
+/* === MAIN LAYOUT SECTION S=== */
 .site-header-2 {
     display: none;
 }
 
 .login-wrapper {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 20px;
@@ -29,7 +19,7 @@ body {
     max-width: 720px;
     background-color: #ffffff;
     padding: 30px 20px;
-    border-radius: 8px;
+    border-radius: 20px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.05);
     margin: 0 auto;
     display: flex;
@@ -58,25 +48,75 @@ body {
 }
 
 .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
     margin-bottom: 20px;
-    position: relative;
+    width: 100%;
+}
+
+.form-group label {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #0C0C0D;
+    margin-bottom: 0px;
+    line-height: 20px;
+    text-align: left;
 }
 
 .form-control {
+    height: 52px;
+    padding: 0 14px;
+    border: 1px solid #D0D5DD;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #667085;
+    outline: none;
+    transition: all 0.2s ease;
     width: 100%;
-    padding: 12px 15px;
-    font-size: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
     box-sizing: border-box;
-    color: #6d6d6d;
+    max-width: 100%;
 }
 
-.password-group {
+.form-control:focus {
+    border-color: #3279B7;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 0 1px #3279B7;
+}
+
+/* Fix for password field focus shadow in the middle */
+.password-input-wrapper .form-control:focus {
+    box-shadow: none;
+}
+
+.form-control::placeholder {
+    color: #98A2B3;
+    font-size: 16px;
+}
+
+.password-input-wrapper {
     display: flex;
+    width: 100%;
+    transition: all 0.2s ease;
 }
 
-.password-group .form-control {
+.password-input-wrapper:focus-within {
+    box-shadow: 0 0 0 1px #3279B7;
+    border-radius: 8px;
+}
+
+.password-input-wrapper:focus-within .form-control,
+.password-input-wrapper:focus-within .password-toggle {
+    border-color: #3279B7;
+}
+
+.password-input-wrapper .form-control {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     border-right: 0;
@@ -84,21 +124,24 @@ body {
 
 .password-toggle {
     background: #fff;
-    border: 1px solid #ccc;
+    border: 1px solid #D0D5DD;
     border-left: 0;
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
     padding: 0 15px;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #888;
+    height: 52px;
 }
 
 .forgot-password {
     text-align: left;
     margin-bottom: 20px;
+    width: 100%;
+    max-width: 350px;
 }
 
 .forgot-password a {
@@ -109,15 +152,17 @@ body {
 
 .btn-login {
     width: 100%;
-    background-color: #337ab7;
+    background-color: #3279B7;
     color: #fff;
     border: none;
-    padding: 12px;
-    font-size: 16px;
-    border-radius: 4px;
+    height: 44px;
+    border-radius: 31px;
     cursor: pointer;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
     font-weight: 500;
     margin-bottom: 10px;
+    transition: background-color 0.2s ease;
 }
 
 .btn-login:hover {

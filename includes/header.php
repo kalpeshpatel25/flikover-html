@@ -46,6 +46,7 @@ $base_url = '/flikover-html';
 <header class="site-header-2">
   <div class="header-content">
     <input type="checkbox" id="mobile-nav-toggle" class="hidden-toggle">
+    <label for="mobile-nav-toggle" class="nav-backdrop"></label>
     
     <!-- === LOGO SECTION S === -->
     <div class="header-left">
@@ -62,13 +63,13 @@ $base_url = '/flikover-html';
       <?php $current_page = basename($_SERVER['PHP_SELF']); ?>
       
       <a href="dashboard.php" class="nav-link <?= $current_page == 'dashboard.php' ? 'active' : '' ?>">Dashboard</a>
-      <a href="#" class="nav-link" id="header-access-btn">Access</a>
+      <a href="combomini.php" class="nav-link" id="header-access-btn">Access</a>
       <a href="tool-access.php" class="nav-link <?= $current_page == 'tool-access.php' ? 'active' : '' ?>">Tool</a>
       <a href="statement.php" class="nav-link <?= $current_page == 'statement.php' ? 'active' : '' ?>">Statement</a>
+      <a href="bank-statement.php" class="nav-link <?= $current_page == 'bank-statement.php' ? 'active' : '' ?>">Bank Statement</a>
       <a href="profile.php" class="nav-link <?= $current_page == 'profile.php' ? 'active' : '' ?>">Edit Profile</a>
       <a href="contactus.php" class="nav-link <?= $current_page == 'contactus.php' ? 'active' : '' ?>">Contact Us</a>
-      <a href="affiliate.php" class="nav-link <?= $current_page == 'affiliate.php' ? 'active' : '' ?>">Affiliate</a>
-      <a href="#" class="nav-link">Logout</a>
+      <a href="logout.php" class="nav-link <?= $current_page == 'logout.php' ? 'active' : '' ?>">Logout</a>
     </nav>
     <!-- === NAVIGATION SECTION E === -->
 
@@ -89,3 +90,4 @@ $base_url = '/flikover-html';
   </div>
 </header>
 <!-- === SITE HEADER E === -->
+<main>

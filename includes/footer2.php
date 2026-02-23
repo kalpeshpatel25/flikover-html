@@ -1,3 +1,4 @@
+</main>
 <footer class="site-footer-2">
   <!-- === FOOTER BOTTOM BAR S === -->
   <div class="footer-bottom-bar">
@@ -7,13 +8,13 @@
               <div class="footer-copyright-links">
                   <span>© 2016-2026 Flikover.com</span>
                   <span class="dot-sep">·</span>
-                  <a href="#">Terms</a>
+                  <a href="terms-conditions.php">Terms</a>
                   <span class="dot-sep">·</span>
-                  <a href="#">Privacy</a>
+                  <a href="privacy-policy.php">Privacy</a>
                   <span class="dot-sep">·</span>
-                  <a href="#">Disclaimer</a>
+                  <a href="disclaimer.php">Disclaimer</a>
                   <span class="dot-sep">·</span>
-                  <a href="#">Contact us</a>
+                  <a href="contactus.php">Contact us</a>
               </div>
               <!-- === COPYRIGHT LINKS E === -->
 

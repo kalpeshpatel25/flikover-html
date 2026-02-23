@@ -8,7 +8,6 @@ include('includes/header.php');
 <div class="tool-access-container">
 
     <div class="main-white-container">
-    <div class="main-white-container">
         <!-- === ACTIVE TOOL CARD SECTION S === -->
         <div class="active-tool-card">
             <div class="tool-logo">
@@ -39,10 +38,7 @@ include('includes/header.php');
 
             <div class="tool-actions">
                 <a href="#" class="renew-button">Renew</a>
-               
             </div>
-
-            
         </div>
         <!-- === ACTIVE TOOL CARD SECTION E === -->
 
@@ -87,15 +83,11 @@ include('includes/header.php');
                 <span class="main-text">Click here to access Ahrefs</span>
                 <span class="sub-text">In semrush, for siteaudit & adding project access "from here"</span>
             </a>
-
-            </a>
             <!-- === LARGE ACCESS BUTTON E === -->
 
             <!-- === PACKAGE ACCESS ALERT S === -->
             <div class="package-access-alert">
                 You need to buy Package to access Ahrefs
-            </div>
-
             </div>
             <!-- === PACKAGE ACCESS ALERT E === -->
 

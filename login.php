@@ -1,9 +1,9 @@
 <?php
 $page_title = 'Flikover Login';
+$page_css = 'login.css';
 include('includes/header.php');
 ?>
 
-<link rel="stylesheet" href="assets/css/pages/login.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
 <!-- === MAIN LAYOUT SECTION S === -->
@@ -17,18 +17,22 @@ include('includes/header.php');
         <!-- === FORM INPUTS SECTION S === -->
         <form action="" method="post">
             <div class="form-group">
-                <input type="email" class="form-control" placeholder="testtest@gmail.com" name="email">
+                <label for="email">Email Address</label>
+                <input type="email" class="form-control" id="email" placeholder="testtest@gmail.com" name="email">
             </div>
 
-            <div class="form-group password-group">
-                <input type="password" class="form-control" placeholder="Password" name="password" id="passwordField">
-                <span class="password-toggle" onclick="togglePassword()">
-                    <i class="fa fa-eye"></i>
-                </span>
+            <div class="form-group">
+                <label for="passwordField">Password</label>
+                <div class="password-input-wrapper">
+                    <input type="password" class="form-control" placeholder="Password" name="password" id="passwordField">
+                    <span class="password-toggle" onclick="togglePassword()">
+                        <i class="fa fa-eye"></i>
+                    </span>
+                </div>
             </div>
 
             <div class="forgot-password">
-                <a href="#">Forgot password?</a>
+                <a href="reset-password.php">Forgot password?</a>
             </div>
 
             <button type="submit" class="btn-login">Login</button>
@@ -45,6 +49,7 @@ include('includes/header.php');
         <!-- === FOOTER SECTION S === -->
         <?php include('includes/footer3.php'); ?>
         <!-- === FOOTER SECTION E === -->
+
     </div>
     <!-- === LOGIN FORM SECTION E === -->
 </div>
@@ -63,5 +68,6 @@ include('includes/header.php');
 </script>
 <!-- === PAGE SCRIPTS SECTION E === -->
 
+</main>
 </body>
 </html>

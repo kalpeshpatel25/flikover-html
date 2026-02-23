@@ -23,7 +23,7 @@ include 'includes/header.php';
                     <ul class="notes-list">
                         <li>Combo All <strong>20 Tools (with Ahrefs)</strong></li>
                         <li>All tools will have <strong>90 days access</strong>.</li>
-                        <li>For already subscribed tool, access for that tool will be added after <em>your current expiry date</em>.</li>
+                        <li>For already subscribed tool, access for that tool will be added after your current expiry date.</li>
                         <li>Access will be activated after transaction.</li>
                     </ul>
                 </div>
@@ -46,7 +46,7 @@ include 'includes/header.php';
                 <div class="support-section">
                     <h3 class="support-title">For any support:</h3>
                     <p class="support-email">contact@flikover.com</p>
-                   <a href="#" class="btn-contact">Contact us</a>
+                   <a href="#" class="btn-contact">contact us</a>
                 </div>
             </div>
             <!-- === RIGHT COLUMN (SUPPORT) E === -->

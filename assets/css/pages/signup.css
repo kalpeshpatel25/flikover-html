@@ -1,22 +1,12 @@
 /* ====SIGNUP PAGE STYLES S ==== */
 
 /* === MAIN LAYOUT SECTION S=== */
-body {
-    background-color: #f3f3f3;
-    font-family: 'DM Sans', sans-serif;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
+/* === MAIN LAYOUT SECTION S=== */
 .site-header-2 {
     display: none;
 }
 
 .signup-wrapper {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 20px;
@@ -52,13 +42,28 @@ body {
 }
 
 .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
     margin-bottom: 20px;
+    width: 100%;
+}
+
+.form-group label {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #0C0C0D;
+    margin-bottom: 0px;
+    line-height: 20px;
 }
 
 .form-row {
     display: flex;
     gap: 15px;
     margin-bottom: 20px;
+    width: 100%;
 }
 
 .form-row .form-group {
@@ -67,13 +72,27 @@ body {
 }
 
 .form-control {
+    height: 52px;
+    padding: 0 14px;
+    border: 1px solid #D0D5DD;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #667085;
+    outline: none;
+    transition: all 0.2s ease;
     width: 100%;
-    padding: 12px 15px;
-    font-size: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
     box-sizing: border-box;
-    color: #6d6d6d;
+    max-width: 100%;
+}
+
+.form-control:focus {
+    border-color: #3279B7;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 0 1px #3279B7;
 }
 
 .help-text {

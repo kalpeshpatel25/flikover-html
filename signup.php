@@ -61,5 +61,7 @@ include('includes/header.php'); // Used solely for CSS imports
     <!-- === SIGNUP FORM CONTAINER SECTION E === -->
 </div>
 <!-- === MAIN LAYOUT SECTION E === -->
+
+</main>
 </body>
 </html>

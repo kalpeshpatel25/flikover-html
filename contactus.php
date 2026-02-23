@@ -28,6 +28,7 @@ include 'includes/header.php';
                        Sorry no offer/discount. Price is same for all users and mentioned on dashboard page.
                     </div>
                 </div>
+            </div>
             <!-- === ISSUE ITEM 1 E === -->
 
             <!-- === ISSUE ITEM 2 S === -->
@@ -49,6 +50,7 @@ include 'includes/header.php';
                         </div>
                         Note: If our system required then download our two chrome plugins. Watch this video for help.                    </div>
                 </div>
+            </div>
             <!-- === ISSUE ITEM 2 E === -->
 
             <!-- === ISSUE ITEM 3 S === -->
@@ -73,6 +75,7 @@ include 'includes/header.php';
                         After following above solution, if tool still not work then try to access from new chrome profile.
                     </div>
                 </div>
+            </div>
             <!-- === ISSUE ITEM 3 E === -->
 
             <!-- === ISSUE ITEM 4 S === -->
@@ -92,9 +95,9 @@ include 'includes/header.php';
             </div>
             <!-- === ISSUE ITEM 4 E === -->
         </div>
-        <!-- === COMMON ISSUES SECTION E === -->
+        <!-- === ACCORDION SECTION E === -->
 
-        <!-- === FOOTER SECTION S === -->
+        <!-- === SUPPORT FOOTER S === -->
         <div class="contact-support-footer">
             For any other help message our <a href="#">support team 
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left:5px;">
@@ -102,10 +105,11 @@ include 'includes/header.php';
                 </svg>
             </a>
         </div>
+        <!-- === SUPPORT FOOTER E === -->
         
         <?php include('includes/footer3.php'); ?>
     </div>
-    <!-- === FOOTER SECTION E === -->
+    <!-- === COMMON ISSUES SECTION E === -->
 </div>
 <!-- === MAIN LAYOUT SECTION E === -->
 
@@ -117,9 +121,6 @@ document.addEventListener('DOMContentLoaded', function() {
         const header = item.querySelector('.issue-header');
         
         header.addEventListener('click', (e) => {
-             // Prevent the click from triggering the document listener immediately if we propagated (though logic below handles structure check)
-             // But actually, we rely on the hit test in document listener.
-             
              const isActive = item.classList.contains('active');
              
              // Close all others
@@ -158,4 +159,6 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 
-
+</main>
+</body>
+</html>
