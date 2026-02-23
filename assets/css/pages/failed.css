@@ -1,0 +1,147 @@
+/* assets/css/pages/failed.css */
+
+/* === LAYOUT SECTION S === */
+.failed-container {
+    max-width: 1200px;
+    width: 100%;
+    border-radius: 20px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+@media (max-width: 768px) {
+    .failed-container {
+        margin: 0 auto;
+        padding: 20px 20px 0;
+    }
+}
+/* === LAYOUT SECTION E === */
+
+/* === CARD SECTION S === */
+.failed-card {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 20px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+}
+@media (max-width: 768px) {
+    .failed-card {
+        padding: 15px;
+    }
+}
+/* === CARD SECTION E === */
+
+/* === HEADING SECTION S === */
+.failed-heading {
+    font-size: 32px;
+    font-weight: 700;
+    color: #A87B3C;
+    margin: 0;
+}
+@media (max-width: 768px) {
+    .failed-heading {
+        font-size: 20px;
+    }
+}
+@media (max-width: 480px) {
+    .failed-heading {
+        font-size: 18px;
+    }
+}
+/* === HEADING SECTION E === */
+
+/* === TABLE SECTION S === */
+.failed-table {
+    width: 100%;
+    max-width: 800px;
+    border-collapse: collapse;
+    background-color: #f2dede;
+    border: 1px solid #D9D9D9;
+    margin: 10px 0;
+}
+
+.failed-table td {
+    padding: 18px 25px;
+    border: 1px solid #D9D9D9;
+    font-size: 18px;
+    color: #4A4A4A;
+}
+
+.failed-table tr:hover {
+    background-color: #ebcccc;
+    transition: background-color 0.2s ease;
+}
+
+.failed-table tr td:first-child {
+    font-weight: 600;
+    text-align: center;
+    width: 50%;
+    color: #8C6239; /* Brownish color for labels */
+}
+
+.failed-table tr td:last-child {
+    font-weight: 700;
+    text-align: center;
+    color: #565656;
+}
+@media (max-width: 768px) {
+    .failed-table td {
+        padding: 12px 10px;
+        font-size: 15px;
+    }
+}
+@media (max-width: 480px) {
+    .failed-table td {
+        padding: 10px 5px;
+        font-size: 14px;
+    }
+}
+/* === TABLE SECTION E === */
+
+/* === NOTE SECTION S === */
+.failed-note {
+    font-size: 18px;
+    font-weight: 600;
+    color: #3A3A3A;
+    line-height: 1.4;
+    max-width: 700px;
+    margin-top: 10px;
+}
+@media (max-width: 768px) {
+    .failed-note {
+        font-size: 16px;
+    }
+}
+@media (max-width: 480px) {
+    .failed-note {
+        font-size: 14px;
+    }
+}
+/* === NOTE SECTION E === */
+
+/* === GRAPHIC SECTION S === */
+.sorry-graphic {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.sorry-graphic img {
+    max-width: 250px;
+    height: auto;
+}
+@media (max-width: 768px) {
+    .sorry-graphic img {
+        max-width: 180px;
+    }
+}
+@media (max-width: 480px) {
+    .sorry-graphic img {
+        max-width: 140px;
+    }
+}
+/* === GRAPHIC SECTION E === */

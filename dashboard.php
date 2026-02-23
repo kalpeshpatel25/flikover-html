@@ -125,7 +125,10 @@ include('includes/header.php');
 
      <!-- === TESTING TOOLS SECTION S === -->
     <div class="content-box rounded-top">
-        <h3 class="single-plans-title">Testing tools(only for combo & mini user)</h3>
+        <h3 class="single-plans-title">
+            <img src="assets/images/rocket-solid-full.svg" alt="Rocket" class="title-icon">
+            Testing tools(only for combo & mini user)
+        </h3>
         
         <div class="single-plans-grid">
             <?php 
@@ -155,9 +158,78 @@ include('includes/header.php');
                 </div>
             <?php endforeach; ?>
         </div>
+        <!-- === FOOTER SUPPORT SECTION S === -->
+        <div class="support-details-inner">
+            <div class="support-grid">
+                <!-- Left Column: Notes -->
+                <div class="support-col">
+                    <h4 class="support-title">Important things to Note:</h4>
+                    <ul class="support-list">
+                        <li>Our service only work in Google Chrome browser.</li>
+                        <li class="important-note">We do not allow account share with any 2nd user (friend, family or colleague). "One account = one user access". If you share access then account will be automatically block by our system.</li>
+                    </ul>
+                </div>
+
+                <!-- Right Column: Contact -->
+                <div class="support-col support-right">
+                    <h4 class="support-title">For any support:</h4>
+                    <a href="contactus.php" class="support-contact-btn">Contact us</a>
+                    
+                    <div class="fb-widget-mock">
+                        <div class="fb-left">
+                            <img src="assets/images/image copy.png" alt="FB">
+                        </div>
+                        <div class="fb-right">
+                            <div class="fb-name">Flikover</div>
+                            <div class="fb-actions">
+                                 <button class="fb-follow-btn">
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.469h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                                    Follow Page
+                                 </button>
+                                 <span class="fb-count">5.9K followers</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="support-email">
+                        <a href="mailto:contact@flikover.com">contact@flikover.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- === FOOTER SUPPORT SECTION E === -->
     </div>
 
     <!-- === TESTING TOOLS SECTION E === -->
+
+
+
+    <!-- === FEEDBACK BUTTON S === -->
+    <a href="#" class="fixed-feedback-btn" id="open-feedback-modal">Feedback</a>
+    <!-- === FEEDBACK BUTTON E === -->
+
+    <!-- === FEEDBACK MODAL SECTION S === -->
+    <div id="feedback-modal" class="modal-overlay">
+        <div class="feedback-modal-container">
+            <div class="modal-header">
+                <h3 class="modal-title">Feedback/Suggestion Box</h3>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p class="feedback-label">Anything you like/dislike/recommendation/suggestion:</p>
+                <textarea class="feedback-textarea" placeholder="Type your message here"></textarea>
+                <p class="feedback-note">
+                    <span class="note-red">NOTE: For any query</span> 
+                    <a href="contactus.php" class="contact-link">contact us.</a>
+                </p>
+            </div>
+            <div class="modal-footer feedback-footer">
+                <button class="btn-close">Close</button>
+                <button class="btn-send">Send</button>
+            </div>
+        </div>
+    </div>
+    <!-- === FEEDBACK MODAL SECTION E === -->
 
 </div>
 <!-- === MAIN LAYOUT SECTION E === -->
@@ -255,7 +327,7 @@ include('includes/header.php');
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     const overlays = document.querySelectorAll('.modal-overlay');
-    const closeBtns = document.querySelectorAll('.close-modal');
+    const closeBtns = document.querySelectorAll('.close-modal, .btn-close');
     const singlePlanBtns = document.querySelectorAll('.single-plan-btn');
     const videoBtns = document.querySelectorAll('.open-video-modal');
     const buyNowBtns = document.querySelectorAll('.buy-now-btn');
@@ -306,6 +378,14 @@ document.addEventListener('DOMContentLoaded', function() {
         headerBtn.addEventListener('click', function(e) {
             e.preventDefault();
             openModal('video-modal');
+        });
+    }
+
+    const feedbackBtn = document.getElementById('open-feedback-modal');
+    if (feedbackBtn) {
+        feedbackBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            openModal('feedback-modal');
         });
     }
 

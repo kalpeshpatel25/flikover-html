@@ -5,7 +5,7 @@ include 'includes/header.php';
 ?>
 
 <!-- === MAIN LAYOUT SECTION S === -->
-<div class="combo-package-container">
+<div class="combo-mini-container">
     <!-- === CONTENT BOX SECTION S === -->
     <div class="content-box">
     <div class="combo-header">
