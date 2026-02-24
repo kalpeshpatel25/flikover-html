@@ -1,0 +1,98 @@
+/* assets/css/pages/email-verified.css */
+
+/* === LAYOUT SECTION S === */
+.verified-container {
+    max-width: var(--container-max-width, 1200px);
+    width: 100%;
+    margin: 0px auto;
+    padding: 0 var(--container-padding-x, 20px);
+}
+
+@media (max-width: 768px) {
+    .verified-container {
+        margin: 0 auto;
+        padding: 20px 15px;
+    }
+}
+/* === LAYOUT SECTION E === */
+
+/* === CARD SECTION S === */
+.verified-card {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 60px 80px 80px; 
+    border: 1px solid #eaeaea;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+@media (max-width: 768px) {
+    .verified-card {
+        padding: 40px 20px;
+        gap: 30px;
+    }
+}
+/* === CARD SECTION E === */
+
+/* === SUCCESS BANNER S === */
+.success-banner {
+    background-color: #dff0d8;
+    border: 1px solid #d6e9c6;
+    color: #3c763d;
+    padding: 15px 30px;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 500px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .success-banner {
+        font-size: 18px;
+        padding: 12px 20px;
+    }
+}
+/* === SUCCESS BANNER E === */
+
+/* === SUCCESS INVALID S === */
+.success-invalid {
+    background-color: #f2dede;
+    border: 1px solid #f2dede;
+    color: #a94442;
+    padding: 15px 30px;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 500px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .success-invalid {
+        font-size: 18px;
+        padding: 12px 20px;
+    }
+}
+/* === SUCCESS INVALID E === */
+
+/* === ACTION SECTION S === */
+.btn-dashboard {
+    padding: 12px 60px;
+    font-size: 18px;
+    border-radius: 20px; /* Standardizing with recent input changes */
+    min-width: 200px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+@media (max-width: 480px) {
+    .btn-dashboard {
+        width: 100%;
+        padding: 12px 20px;
+    }
+}
+/* === ACTION SECTION E === */

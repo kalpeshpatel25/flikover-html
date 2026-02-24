@@ -35,6 +35,7 @@ $base_url = '/flikover-html';
   <link rel="stylesheet" href="<?= $base_url ?>/assets/css/tokens.css">
   <link rel="stylesheet" href="<?= $base_url ?>/assets/css/layout.css?v=<?= time() ?>">
   <link rel="stylesheet" href="<?= $base_url ?>/assets/css/global.css">
+  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/feedback.css">
   <?php if ($page_css): ?>
     <link rel="stylesheet" href="<?= $base_url ?>/assets/css/pages/<?= htmlspecialchars($page_css); ?>?v=<?= time() ?>">
   <?php endif; ?>

@@ -36,6 +36,7 @@ $base_url = '/flikover-html';
   <link rel="stylesheet" href="<?= $base_url ?>/assets/css/tokens.css">
   <link rel="stylesheet" href="<?= $base_url ?>/assets/css/layout.css?v=<?= time() ?>">
   <link rel="stylesheet" href="<?= $base_url ?>/assets/css/global.css">
+  <link rel="stylesheet" href="<?= $base_url ?>/assets/css/feedback.css">
   <?php if ($page_css): ?>
     <link rel="stylesheet" href="<?= $base_url ?>/assets/css/pages/<?= htmlspecialchars($page_css); ?>?v=<?= time() ?>">
   <?php endif; ?>
@@ -66,7 +67,7 @@ $base_url = '/flikover-html';
     
     <!-- === LOGO S === -->
     <a href="<?= $base_url ?>/home.php" class="site-logo">
-      <img src="<?= $base_url ?>/assets/images/logo_new 1.png" alt="Flikover" width="161" style="height: auto; display: block;">
+      <img src="<?= $base_url ?>/assets/images/logo_new 1.png" alt="Flikover" width="120" style="height: auto; display: block;">
     </a>
     <!-- === LOGO E === -->
 

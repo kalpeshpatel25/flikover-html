@@ -167,6 +167,7 @@ include('includes/header.php');
                     <ul class="support-list">
                         <li>Our service only work in Google Chrome browser.</li>
                         <li class="important-note">We do not allow account share with any 2nd user (friend, family or colleague). "One account = one user access". If you share access then account will be automatically block by our system.</li>
+                        <li>For any support: <b><a href="mailto:contact@flikover.com">contact@flikover.com</a></b></li>
                     </ul>
                 </div>
 
@@ -191,9 +192,9 @@ include('includes/header.php');
                         </div>
                     </div>
 
-                    <div class="support-email">
+                    <!-- <div class="support-email">
                         <a href="mailto:contact@flikover.com">contact@flikover.com</a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -204,32 +205,7 @@ include('includes/header.php');
 
 
 
-    <!-- === FEEDBACK BUTTON S === -->
-    <a href="#" class="fixed-feedback-btn" id="open-feedback-modal">Feedback</a>
-    <!-- === FEEDBACK BUTTON E === -->
 
-    <!-- === FEEDBACK MODAL SECTION S === -->
-    <div id="feedback-modal" class="modal-overlay">
-        <div class="feedback-modal-container">
-            <div class="modal-header">
-                <h3 class="modal-title">Feedback/Suggestion Box</h3>
-                <span class="close-modal">&times;</span>
-            </div>
-            <div class="modal-body">
-                <p class="feedback-label">Anything you like/dislike/recommendation/suggestion:</p>
-                <textarea class="feedback-textarea" placeholder="Type your message here"></textarea>
-                <p class="feedback-note">
-                    <span class="note-red">NOTE: For any query</span> 
-                    <a href="contactus.php" class="contact-link">contact us.</a>
-                </p>
-            </div>
-            <div class="modal-footer feedback-footer">
-                <button class="btn-close">Close</button>
-                <button class="btn-send">Send</button>
-            </div>
-        </div>
-    </div>
-    <!-- === FEEDBACK MODAL SECTION E === -->
 
 </div>
 <!-- === MAIN LAYOUT SECTION E === -->
@@ -381,13 +357,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    const feedbackBtn = document.getElementById('open-feedback-modal');
-    if (feedbackBtn) {
-        feedbackBtn.addEventListener('click', function(e) {
-            e.preventDefault();
-            openModal('feedback-modal');
-        });
-    }
 
     
     const closeAllModals = () => {

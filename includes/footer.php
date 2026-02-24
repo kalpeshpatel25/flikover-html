@@ -31,6 +31,7 @@
   </div>
   <!-- === FOOTER BOTTOM BAR E === -->
 </footer>
+<?php include('feedback-modal.php'); ?>
 
 <script>
   $(function(){
